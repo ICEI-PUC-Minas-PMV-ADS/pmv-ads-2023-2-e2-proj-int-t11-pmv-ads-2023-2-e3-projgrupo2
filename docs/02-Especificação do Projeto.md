@@ -9,20 +9,20 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 As personas levantadas durante o processo de entendimento do problema são apresentadas nas figuras abaixo:
 
 ### Lucas Mendes
-[FOTO]<br />
-<strong>Idade:</strong> 51 anos<br />
-<strong>Ocupação:</strong> Engenheiro Civil<br />
-<strong>Descrição:</strong><br />
-<strong>Aplicativos:</strong>
+[FOTO]
+<br /><strong>Idade:</strong> 51 anos
+<br /><strong>Ocupação:</strong> Engenheiro Civil
+<br /><strong>Descrição:</strong>
+<br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>Facebook</li>
 <li>Waze</li>
 <li>Excel</li>
-<strong>Motivações:</strong>
+<br /><strong>Motivações:</strong>
 <li></li>
-<strong>Frustrações:</strong>
+<br /><strong>Frustrações:</strong>
 <li></li>
-<strong>Hobbies:</strong>
+<br /><strong>Hobbies:</strong>
 <li></li>
 
 ### Ana Silva
