@@ -12,18 +12,22 @@ As personas levantadas durante o processo de entendimento do problema são apres
 [FOTO]
 <br /><strong>Idade:</strong> 51 anos
 <br /><strong>Ocupação:</strong> Engenheiro Civil
-<br /><strong>Descrição:</strong>
+<br /><strong>Descrição:</strong> Lucas Mendes é um engenheiro civil bem-sucedido, conhecido por sua dedicação ao trabalho e sua abordagem meticulosa em tudo o que faz. Ele é uma pessoa ativa, sempre em movimento, e mantém um estilo de vida ocupado devido às suas responsabilidades profissionais e pessoais. Lucas também é pai de dois filhos e tenta equilibrar suas obrigações familiares com sua carreira. 
 <br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>Facebook</li>
 <li>Waze</li>
 <li>Excel</li>
 <br /><strong>Motivações:</strong>
-<li></li>
+<li>Lucas reconhece a importância de cuidar de sua saúde bucal, mas suas obrigações profissionais e familiares muitas vezes consomem seu tempo. Ele vê o aplicativo como uma solução que permitirá que ele agende consultas de maneira conveniente, economizando tempo valioso.</li>
+<li>Como alguém que valoriza informações claras e detalhadas, Lucas vê o aplicativo como uma maneira de acessar rapidamente seu histórico de tratamentos e obter informações sobre procedimentos planejados, permitindo que ele tome decisões informadas.</li>
 <br /><strong>Frustrações:</strong>
-<li></li>
+<li>Lucas muitas vezes adia ou negligência consultas dentárias devido à sua agenda agitada como engenheiro civil.</li>
+<li>A falta de tempo para cuidar de sua saúde bucal pode ser frustrante, especialmente quando se confronta com uma lista de obrigações profissionais e familiares.</li>
 <br /><strong>Hobbies:</strong>
-<li></li>
+<li>Lucas gosta de passar tempo ao ar livre com sua família, seja em parques, praias ou trilhas.</li>
+<li>Eles gostam de assistir a filmes juntos em casa, criando uma atmosfera acolhedora e relaxante.</li>
+<li>Lucas acredita na importância de apresentar sua família a diferentes culturas, levando-os a museus, exposições e eventos culturais. projetos pessoais.</li>
 
 ### Ana Silva
 [FOTO]
