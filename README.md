@@ -6,7 +6,7 @@
 
 `SEMESTRE` -> `Segundo Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+EasyDental é um sistema de agendamento de horários que permite que clientes e dentistas se cadastrem, façam login, visualizem informações detalhadas de dentistas, agendem horários, evitem agendamentos duplicados e gerenciem seus horários de forma eficiente. Ideal para simplificar o processo de marcação de consultas odontológicas.
 
 ## Integrantes
 
@@ -17,7 +17,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Orientador
 
-* Nome completo do professor 1
+* Neil Paiva Tizzo
 
 ## Instruções de utilização
 
