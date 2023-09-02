@@ -33,52 +33,79 @@ As personas levantadas durante o processo de entendimento do problema são apres
 [FOTO]
 <br /><strong>Idade:</strong> 32 anos<br />
 <br /><strong>Ocupação:</strong> Educadora Infantil<br />
-<br /><strong>Descrição:</strong><br />
+<br /><strong>Descrição:</strong> Ana Silva é uma professora de educação infantil apaixonada por seu trabalho. Ela passa a maior parte do seu dia cuidando e educando crianças em idade pré-escolar. Ana é uma pessoa gentil e atenciosa, mas quando se trata de consultas dentárias, ela fica um pouco nervosa. Ela tem um histórico de problemas dentários que resultaram em procedimentos dentários complexos no passado, o que a deixou um pouco apreensiva em relação ao tratamento dentário. No entanto, Ana entende a importância de cuidar da sua saúde bucal para manter seu sorriso saudável.<br />
 <br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>Instagram</li>
 <li>Spotify</li>
 <li>Pinterest</li>
 <br /><strong>Motivações:</strong>
-<li></li>
+<li>Agendar consultas em horários flexíveis, adequados à sua rotina agitada como professora.</li>
+<li>Escolher horários após o expediente ou durante os fins de semana para não interferir com suas aulas.</li>
+<li>Gestão de compromissos simplificada.</li>
+<li>Evitar conflitos de agenda e gerenciar suas consultas dentárias de maneira eficiente.</li>
+<li>Reconhecer a importância de manter uma boa saúde bucal para sua autoconfiança e bem-estar geral.</li>
+<li>Usar o aplicativo como uma ferramenta para cuidar de si mesma de maneira mais tranquila e eficaz.</li>
 <br /><strong>Frustrações:</strong>
-<li></li>
+<li>Dificuldade em priorizar o cuidado com a saúde bucal devido às frustrações e desafios enfrentados.</li>
+<li>Risco de negligenciar a saúde oral por causa das barreiras encontradas.</li>
+<li>Falta de um relacionamento consistente com um dentista que compreenda suas preocupações.</li>
 <br /><strong>Hobbies:</strong>
-<li></li>
+<li>Gosta de ler livros variados, especialmente romances e histórias inspiradoras.</li>
+<li>Aproveita seu talento para a escrita, criando pequenas histórias e reflexões em seu tempo livre.</li>
+<li>Apaixonada por design gráfico, ela passa tempo explorando novas tendências e criando projetos pessoais.</li>
+<li>Participa de workshops de arte e design para aprimorar suas habilidades e inspiração.</li>
+<li>Adora experimentar novas receitas e pratos culinários, especialmente receitas saudáveis e vegetarianas.</li>
+<li>Cozinhar é uma forma de relaxar e compartilhar momentos agradáveis com amigos e familiares.</li>
 
 ### Dr. Rodrigo Ferreira
 [FOTO]
 <br /><strong>Idade:</strong> 47 anos<br />
 <br /><strong>Ocupação:</strong> Dentista Ortodontista<br />
-<br /><strong>Descrição:</strong><br />
+<br /><strong>Descrição:</strong> O Dr. Rodrigo Ferreira é um dentista experiente e dedicado, conhecido por seu profissionalismo e atenção aos detalhes. Ele dirige uma clínica odontológica bem estabelecida e está comprometido em fornecer cuidados odontológicos de alta qualidade para seus pacientes. O Dr. Ferreira está sempre atualizado com as últimas tendências na área e busca aprimorar constantemente suas habilidades.<br />
 <br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>Facebook</li>
 <li>Google Calendar</li>
 <li>Audible</li>
 <br /><strong>Motivações:</strong>
-<li></li>
+<li>A possibilidade de gerenciar sua agenda de maneira centralizada, permitindo visualizar disponibilidade e compromissos de forma rápida.</li>
+<li>Otimizar o processo de agendamento, economizando tempo e evitando conflitos na agenda.</li>
+<li>Facilitar a comunicação entre a equipe, permitindo coordenar agendas e atualizar informações de forma eficaz.</li>
+<li>Garantir que todos os membros da equipe estejam cientes das mudanças e compromissos, melhorando a organização geral.</li>
 <br /><strong>Frustrações:</strong>
-<li></li>
+<li>Lidar com uma agenda repleta de consultas, tratamentos e procedimentos, o que pode levar a dificuldades de gerenciamento e possíveis conflitos.</li>
+<li>Lidar com altas taxas de faltas e cancelamentos de última hora, o que afeta negativamente a eficiência da clínica.</li>
+<li>Tentativas frustrantes de preencher espaços vazios na agenda devido a cancelamentos.</li>
 <br /><strong>Hobbies:</strong>
-<li></li>
+<li>Encontra relaxamento e equilíbrio na prática regular de yoga.</li>
+<li>Explora diferentes culturas e destinos através de viagens.</li>
+<li>Aprecia a oportunidade de expandir horizontes e experimentar novas perspectivas.</li>
 
 ### Dra. Maria Oliveira
 [FOTO]
 <br /><strong>Idade:</strong> 25 anos<br />
 <br /><strong>Ocupação:</strong> Dentista<br />
-<br /><strong>Descrição:</strong><br />
+<br /><strong>Descrição:</strong> Maria Oliveira é uma jovem dentista recém-formada, cheia de entusiasmo e desejo de construir sua carreira na área odontológica. Ela é uma profissional ambiciosa que está ansiosa para aplicar seus conhecimentos teóricos em situações reais e aprender com a prática clínica. Maria é dedicada, determinada e está sempre em busca de maneiras de aprimorar suas habilidades e conquistar a confiança de seus pacientes.<br />
 <br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>TikTok</li>
 <li>Spotify</li>
 <li>MyFitnessPal</li>
 <br /><strong>Motivações:</strong>
-<li></li>
+<li>Maria está determinada a construir uma reputação sólida como dentista recém-formada.</li>
+<li>Ela vê o aplicativo como uma ferramenta que pode ajudá-la a oferecer um serviço conveniente e eficiente, criando uma impressão positiva nos pacientes desde o início.</li>
+<li>Maria compreende a importância de estabelecer uma comunicação sólida com os pacientes para construir confiança e fidelização.</li>
 <br /><strong>Frustrações:</strong>
-<li></li>
+<li>Maria enfrenta a dificuldade de atrair pacientes para sua prática, especialmente como recém-formada.</li>
+<li>A falta de uma base estabelecida pode ser frustrante ao tentar preencher sua agenda com consultas.</li>
+<li>Lidar com uma agenda em constante mudança pode ser estressante para Maria.</li>
+<li>Conflitos de horários entre pacientes e oportunidades de aprendizado podem causar frustração.</li>
 <br /><strong>Hobbies:</strong>
-<li></li>
+<li>Tocar violão, Piano, editar vídeos.</li>
+<li>Adora ler.</li>
+<li>Maria gosta de se envolver em projetos de artesanato e DIY (Faça Você Mesmo) durante seu tempo livre.</li>
+<li>Maria gosta de cozinhar refeições saudáveis e experimentar novas receitas.</li>
 
 ## Histórias de Usuários
 
