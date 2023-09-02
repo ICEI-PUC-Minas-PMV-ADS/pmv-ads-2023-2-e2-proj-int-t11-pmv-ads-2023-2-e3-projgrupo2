@@ -1,18 +1,22 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+No cenário atual, agendar uma consulta odontológica muitas vezes pode ser uma tarefa complicada e demorada, envolvendo telefonemas incômodos ou visitas presenciais. É nesse contexto que surge o EasyDental, um projeto que visa simplificar radicalmente o processo de agendamento de consultas com dentistas.
+
+Imagine encontrar o dentista certo, marcar uma consulta em poucos cliques, evitar erros de agendamento e gerenciar seus horários com facilidade. É exatamente isso que o EasyDental busca oferecer. Esta plataforma foi criada para beneficiar tanto os pacientes em busca de cuidados odontológicos quanto os próprios dentistas que desejam oferecer seus serviços de forma eficiente.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+No contexto atual, o agendamento de consultas odontológicas é frequentemente uma tarefa desafiadora para pacientes e dentistas. A falta de uma plataforma eficiente e acessível para marcar e gerenciar horários resulta em diversos problemas:
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+<ol>
+<li>Dificuldade no Encontro de Dentistas Adequados: Pacientes muitas vezes têm dificuldade em encontrar dentistas que atendam às suas necessidades específicas, como especialidades ou localizações convenientes.</li>
+<li>Agendamento Ineficiente: O processo de agendamento, que frequentemente envolve telefonemas ou visitas presenciais, é demorado e propenso a erros, como horários duplicados.</li>
+<li>Falta de Transparência: A falta de informações detalhadas sobre os dentistas, como horários de atendimento, cria incerteza para os pacientes.</li>
+<li>Tempo Desperdiçado: Tanto pacientes quanto dentistas perdem tempo significativo gerenciando e ajustando horários, o que poderia ser utilizado de forma mais produtiva.</li>
+<li>Potencial para Cancelamentos Tardios: A ausência de um sistema de gerenciamento de horários eficaz pode levar a cancelamentos de última hora, prejudicando a clínica e outros pacientes.</li>
+</ol>
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Este cenário demonstra a necessidade premente de uma solução que simplifique o agendamento de consultas odontológicas, ofereça transparência e eficiência, além de melhorar a experiência tanto para os pacientes quanto para os próprios dentistas. É nesse contexto que o EasyDental se propõe a resolver esses problemas com uma plataforma inovadora e acessível.
 
 ## Objetivos
 
