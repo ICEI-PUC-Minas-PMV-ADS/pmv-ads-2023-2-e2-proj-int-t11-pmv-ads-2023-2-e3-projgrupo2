@@ -35,12 +35,15 @@ O EasyDental se concentra em atender às necessidades específicas de pacientes 
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A criação do EasyDental se baseia em uma necessidade real e premente no mercado de serviços odontológicos. Dados revelam que muitos pacientes enfrentam dificuldades ao agendar consultas odontológicas, o que resulta em perda de tempo e experiências insatisfatórias. Além disso, dentistas também lutam com a gestão ineficiente de horários e cancelamentos tardios.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Ao abordar esses desafios com uma solução inovadora, o EasyDental não apenas simplifica o agendamento, mas também melhora a qualidade dos cuidados odontológicos. Com este projeto, buscamos:
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+<li><strong>Aprimorar a Experiência do Paciente:</strong> Facilitando o encontro de dentistas adequados, reduzindo o tempo de espera e garantindo informações transparentes, o EasyDental visa tornar a experiência do paciente mais satisfatória e conveniente.</li>
+<li><strong>Aumentar a Eficiência dos Dentistas:</strong> Oferecendo ferramentas de gerenciamento de horários eficazes, o EasyDental permite que os dentistas otimizem seus atendimentos, evitem cancelamentos e proporcionem um serviço de qualidade.</li>
+<li><strong>Contribuir para a Transformação Digital na Saúde:</strong> Em um momento em que a digitalização da área de saúde está em ascensão, o EasyDental se alinha com essa tendência, fornecendo uma solução tecnologicamente avançada para uma necessidade fundamental.</li>
+
+Portanto, a criação do EasyDental não apenas resolve uma dor do mercado, mas também promove a eficiência, transparência e acessibilidade no agendamento de consultas odontológicas, beneficiando pacientes, dentistas e a indústria de saúde como um todo.
 
 ## Público-Alvo
 
