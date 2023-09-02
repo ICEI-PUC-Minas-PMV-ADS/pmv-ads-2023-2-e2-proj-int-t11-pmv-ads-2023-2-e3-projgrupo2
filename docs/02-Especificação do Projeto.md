@@ -28,8 +28,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Lucas Mendes|Agendar consulta|Poupar tempo e garantir que o agendamento seja feito de maneira rápida e conveniente|
 |Ana Silva|Filtrar pelos Dentistas próximos da minha região|Encontrar um profissional de confiança em minha nova localidade|
-|Dr. Rodrigo Ferreira| Alterar permissões                 | Permitir que possam administrar contas |
-|Dra. Maria Oliveira| Alterar permissões                 | Permitir que possam administrar contas |
+|Dr. Rodrigo Ferreira|Visualizar horários marcados pelos clientes|Gerenciar meu cronograma de consultas de forma eficiente|
+|Dra. Maria Oliveira|Me cadastrar|Aumentar sua visibilidade profissional|
 
 ## Requisitos
 
