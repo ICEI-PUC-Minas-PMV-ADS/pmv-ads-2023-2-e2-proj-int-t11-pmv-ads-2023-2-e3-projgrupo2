@@ -10,9 +10,9 @@ As personas levantadas durante o processo de entendimento do problema são apres
 
 ### Lucas Mendes
 [FOTO]
-<br /><strong>Idade:</strong> 51 anos
-<br /><strong>Ocupação:</strong> Engenheiro Civil
-<br /><strong>Descrição:</strong> Lucas Mendes é um engenheiro civil bem-sucedido, conhecido por sua dedicação ao trabalho e sua abordagem meticulosa em tudo o que faz. Ele é uma pessoa ativa, sempre em movimento, e mantém um estilo de vida ocupado devido às suas responsabilidades profissionais e pessoais. Lucas também é pai de dois filhos e tenta equilibrar suas obrigações familiares com sua carreira. 
+<br /><strong>Idade:</strong> 51 anos<br />
+<br /><strong>Ocupação:</strong> Engenheiro Civil<br />
+<br /><strong>Descrição:</strong> Lucas Mendes é um engenheiro civil bem-sucedido, conhecido por sua dedicação ao trabalho e sua abordagem meticulosa em tudo o que faz. Ele é uma pessoa ativa, sempre em movimento, e mantém um estilo de vida ocupado devido às suas responsabilidades profissionais e pessoais. Lucas também é pai de dois filhos e tenta equilibrar suas obrigações familiares com sua carreira.<br />
 <br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>Facebook</li>
@@ -31,9 +31,9 @@ As personas levantadas durante o processo de entendimento do problema são apres
 
 ### Ana Silva
 [FOTO]
-<br /><strong>Idade:</strong> 32 anos
-<br /><strong>Ocupação:</strong> Educadora Infantil
-<br /><strong>Descrição:</strong>
+<br /><strong>Idade:</strong> 32 anos<br />
+<br /><strong>Ocupação:</strong> Educadora Infantil<br />
+<br /><strong>Descrição:</strong><br />
 <br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>Instagram</li>
@@ -48,9 +48,9 @@ As personas levantadas durante o processo de entendimento do problema são apres
 
 ### Dr. Rodrigo Ferreira
 [FOTO]
-<br /><strong>Idade:</strong> 47 anos
-<br /><strong>Ocupação:</strong> Dentista Ortodontista
-<br /><strong>Descrição:</strong>
+<br /><strong>Idade:</strong> 47 anos<br />
+<br /><strong>Ocupação:</strong> Dentista Ortodontista<br />
+<br /><strong>Descrição:</strong><br />
 <br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>Facebook</li>
@@ -65,9 +65,9 @@ As personas levantadas durante o processo de entendimento do problema são apres
 
 ### Dra. Maria Oliveira
 [FOTO]
-<br /><strong>Idade:</strong> 25 anos
-<br /><strong>Ocupação:</strong> Dentista
-<br /><strong>Descrição:</strong>
+<br /><strong>Idade:</strong> 25 anos<br />
+<br /><strong>Ocupação:</strong> Dentista<br />
+<br /><strong>Descrição:</strong><br />
 <br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>TikTok</li>
