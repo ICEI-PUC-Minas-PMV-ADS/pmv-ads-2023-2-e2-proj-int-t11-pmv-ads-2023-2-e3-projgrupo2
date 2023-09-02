@@ -47,13 +47,9 @@ Portanto, a criação do EasyDental não apenas resolve uma dor do mercado, mas 
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Um site de agendamento odontológico geralmente atrai pessoas que buscam serviços odontológicos com eficiência e modernidade na marcação de consultas, tais como:
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+<li>Pessoas ocupadas com agendas lotadas devido ao trabalho ou outras responsabilidades, que preferem a flexibilidade de agendar consultas odontológicas online.</li>
+<li>Idosos, que podem agendar no conforto de suas casas, sem a necessidade de passar horas em uma sala de espera.</li>
+<li>Pessoas com problemas dentários súbitos, que desejam marcar uma consulta com um dentista o mais rápido possível. Em situações de dor aguda, essa rapidez é essencial para obter alívio e tratamento adequado.</li>
+<li>Dentistas, que podem gerenciar seus horários de forma mais eficiente, evitando superlotação ou lacunas nas consultas.</li>
