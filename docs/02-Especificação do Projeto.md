@@ -9,7 +9,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 As personas levantadas durante o processo de entendimento do problema são apresentadas nas figuras abaixo:
 
 ### Lucas Mendes
-[FOTO]
+![Lucas Mendes](./img/personaLucasMendes.jpg)
 <br /><strong>Idade:</strong> 51 anos<br />
 <br /><strong>Ocupação:</strong> Engenheiro Civil<br />
 <br /><strong>Descrição:</strong> Lucas Mendes é um engenheiro civil bem-sucedido, conhecido por sua dedicação ao trabalho e sua abordagem meticulosa em tudo o que faz. Ele é uma pessoa ativa, sempre em movimento, e mantém um estilo de vida ocupado devido às suas responsabilidades profissionais e pessoais. Lucas também é pai de dois filhos e tenta equilibrar suas obrigações familiares com sua carreira.<br />
@@ -30,7 +30,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 <li>Lucas acredita na importância de apresentar sua família a diferentes culturas, levando-os a museus, exposições e eventos culturais. projetos pessoais.</li>
 
 ### Ana Silva
-[FOTO]
+![Ana Silva](./img/personaAnaSilva.jpg)
 <br /><strong>Idade:</strong> 32 anos<br />
 <br /><strong>Ocupação:</strong> Educadora Infantil<br />
 <br /><strong>Descrição:</strong> Ana Silva é uma professora de educação infantil apaixonada por seu trabalho. Ela passa a maior parte do seu dia cuidando e educando crianças em idade pré-escolar. Ana é uma pessoa gentil e atenciosa, mas quando se trata de consultas dentárias, ela fica um pouco nervosa. Ela tem um histórico de problemas dentários que resultaram em procedimentos dentários complexos no passado, o que a deixou um pouco apreensiva em relação ao tratamento dentário. No entanto, Ana entende a importância de cuidar da sua saúde bucal para manter seu sorriso saudável.<br />
@@ -59,7 +59,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 <li>Cozinhar é uma forma de relaxar e compartilhar momentos agradáveis com amigos e familiares.</li>
 
 ### Dr. Rodrigo Ferreira
-[FOTO]
+![Dr. Rodrigo Ferreira](./img/personaRodrigoFerreira.jpg)
 <br /><strong>Idade:</strong> 47 anos<br />
 <br /><strong>Ocupação:</strong> Dentista Ortodontista<br />
 <br /><strong>Descrição:</strong> O Dr. Rodrigo Ferreira é um dentista experiente e dedicado, conhecido por seu profissionalismo e atenção aos detalhes. Ele dirige uma clínica odontológica bem estabelecida e está comprometido em fornecer cuidados odontológicos de alta qualidade para seus pacientes. O Dr. Ferreira está sempre atualizado com as últimas tendências na área e busca aprimorar constantemente suas habilidades.<br />
@@ -83,7 +83,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 <li>Aprecia a oportunidade de expandir horizontes e experimentar novas perspectivas.</li>
 
 ### Dra. Maria Oliveira
-[FOTO]
+![Dra. Maria Oliveira](./img/personaMariaOliveira.jpg)
 <br /><strong>Idade:</strong> 25 anos<br />
 <br /><strong>Ocupação:</strong> Dentista<br />
 <br /><strong>Descrição:</strong> Maria Oliveira é uma jovem dentista recém-formada, cheia de entusiasmo e desejo de construir sua carreira na área odontológica. Ela é uma profissional ambiciosa que está ansiosa para aplicar seus conhecimentos teóricos em situações reais e aprender com a prática clínica. Maria é dedicada, determinada e está sempre em busca de maneiras de aprimorar suas habilidades e conquistar a confiança de seus pacientes.<br />
