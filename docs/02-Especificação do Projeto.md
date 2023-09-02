@@ -27,53 +27,53 @@ As personas levantadas durante o processo de entendimento do problema são apres
 
 ### Ana Silva
 [FOTO]
-<strong>Idade:</strong> 32 anos
-<strong>Ocupação:</strong> Educadora Infantil
-<strong>Descrição:</strong>
-<strong>Aplicativos:</strong>
+<br /><strong>Idade:</strong> 32 anos
+<br /><strong>Ocupação:</strong> Educadora Infantil
+<br /><strong>Descrição:</strong>
+<br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>Instagram</li>
 <li>Spotify</li>
 <li>Pinterest</li>
-<strong>Motivações:</strong>
+<br /><strong>Motivações:</strong>
 <li></li>
-<strong>Frustrações:</strong>
+<br /><strong>Frustrações:</strong>
 <li></li>
-<strong>Hobbies:</strong>
+<br /><strong>Hobbies:</strong>
 <li></li>
 
 ### Dr. Rodrigo Ferreira
 [FOTO]
-<strong>Idade:</strong> 47 anos
-<strong>Ocupação:</strong> Dentista Ortodontista
-<strong>Descrição:</strong>
-<strong>Aplicativos:</strong>
+<br /><strong>Idade:</strong> 47 anos
+<br /><strong>Ocupação:</strong> Dentista Ortodontista
+<br /><strong>Descrição:</strong>
+<br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>Facebook</li>
 <li>Google Calendar</li>
 <li>Audible</li>
-<strong>Motivações:</strong>
+<br /><strong>Motivações:</strong>
 <li></li>
-<strong>Frustrações:</strong>
+<br /><strong>Frustrações:</strong>
 <li></li>
-<strong>Hobbies:</strong>
+<br /><strong>Hobbies:</strong>
 <li></li>
 
 ### Dra. Maria Oliveira
 [FOTO]
-<strong>Idade:</strong> 25 anos
-<strong>Ocupação:</strong> Dentista
-<strong>Descrição:</strong>
-<strong>Aplicativos:</strong>
+<br /><strong>Idade:</strong> 25 anos
+<br /><strong>Ocupação:</strong> Dentista
+<br /><strong>Descrição:</strong>
+<br /><strong>Aplicativos:</strong>
 <li>WhatsApp</li>
 <li>TikTok</li>
 <li>Spotify</li>
 <li>MyFitnessPal</li>
-<strong>Motivações:</strong>
+<br /><strong>Motivações:</strong>
 <li></li>
-<strong>Frustrações:</strong>
+<br /><strong>Frustrações:</strong>
 <li></li>
-<strong>Hobbies:</strong>
+<br /><strong>Hobbies:</strong>
 <li></li>
 
 ## Histórias de Usuários
