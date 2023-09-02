@@ -10,58 +10,70 @@ As personas levantadas durante o processo de entendimento do problema são apres
 
 ### Lucas Mendes
 [FOTO]
-Idade:
-Ocupação:
-Descrição:
-Aplicativos:
+<strong>Idade:</strong> 51 anos
+<strong>Ocupação:</strong> Engenheiro Civil
+<strong>Descrição:</strong>
+<strong>Aplicativos:</strong>
+<li>WhatsApp</li>
+<li>Facebook</li>
+<li>Waze</li>
+<li>Excel</li>
+<strong>Motivações:</strong>
 <li></li>
-Motivações:
+<strong>Frustrações:</strong>
 <li></li>
-Frustrações:
-<li></li>
-Hobbies:
+<strong>Hobbies:</strong>
 <li></li>
 
 ### Ana Silva
 [FOTO]
-Idade:
-Ocupação:
-Descrição:
-Aplicativos:
+<strong>Idade:</strong> 32 anos
+<strong>Ocupação:</strong> Educadora Infantil
+<strong>Descrição:</strong>
+<strong>Aplicativos:</strong>
+<li>WhatsApp</li>
+<li>Instagram</li>
+<li>Spotify</li>
+<li>Pinterest</li>
+<strong>Motivações:</strong>
 <li></li>
-Motivações:
+<strong>Frustrações:</strong>
 <li></li>
-Frustrações:
-<li></li>
-Hobbies:
+<strong>Hobbies:</strong>
 <li></li>
 
 ### Dr. Rodrigo Ferreira
 [FOTO]
-Idade:
-Ocupação:
-Descrição:
-Aplicativos:
+<strong>Idade:</strong> 47 anos
+<strong>Ocupação:</strong> Dentista Ortodontista
+<strong>Descrição:</strong>
+<strong>Aplicativos:</strong>
+<li>WhatsApp</li>
+<li>Facebook</li>
+<li>Google Calendar</li>
+<li>Audible</li>
+<strong>Motivações:</strong>
 <li></li>
-Motivações:
+<strong>Frustrações:</strong>
 <li></li>
-Frustrações:
-<li></li>
-Hobbies:
+<strong>Hobbies:</strong>
 <li></li>
 
 ### Dra. Maria Oliveira
 [FOTO]
-Idade:
-Ocupação:
-Descrição:
-Aplicativos:
+<strong>Idade:</strong> 25 anos
+<strong>Ocupação:</strong> Dentista
+<strong>Descrição:</strong>
+<strong>Aplicativos:</strong>
+<li>WhatsApp</li>
+<li>TikTok</li>
+<li>Spotify</li>
+<li>MyFitnessPal</li>
+<strong>Motivações:</strong>
 <li></li>
-Motivações:
+<strong>Frustrações:</strong>
 <li></li>
-Frustrações:
-<li></li>
-Hobbies:
+<strong>Hobbies:</strong>
 <li></li>
 
 ## Histórias de Usuários
