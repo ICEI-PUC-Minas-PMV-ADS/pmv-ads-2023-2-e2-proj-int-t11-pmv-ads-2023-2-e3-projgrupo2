@@ -20,12 +20,18 @@ Este cenário demonstra a necessidade premente de uma solução que simplifique 
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral do projeto EasyDental é desenvolver um software inovador que simplifique o agendamento de consultas odontológicas, proporcionando uma experiência eficiente e transparente tanto para pacientes quanto para dentistas. A solução visa resolver os problemas associados ao agendamento convencional e melhorar a acessibilidade aos serviços odontológicos.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Como objetivos específicos, são ressaltados:
+<ol>
+<li><strong>Facilitar a Busca por Dentistas:</strong> Proporcionar aos pacientes uma plataforma que permita encontrar facilmente dentistas com base em critérios como especialidade e localização, aumentando a acessibilidade aos serviços odontológicos.</li>
+<li><strong>Eficiência no Agendamento:</strong> Desenvolver um sistema de agendamento intuitivo e eficiente que minimize erros, como agendamentos duplicados, e simplifique o processo de marcação de consultas.</li>
+<li><strong>Transparência na Informação:</strong> Fornecer informações detalhadas sobre os dentistas, incluindo horários de atendimento, para que os pacientes possam tomar decisões informadas sobre suas consultas.</li>
+<li><strong>Gerenciamento de Horários Simplificado:</strong> Permitir que tanto pacientes quanto dentistas gerenciem seus horários de forma fácil e eficaz, reduzindo o tempo desperdiçado com ajustes e cancelamentos.</li>
+<li><strong>Minimizar Cancelamentos Tardios:</strong> Implementar recursos que ajudem a evitar cancelamentos de última hora, minimizando o impacto negativo nas clínicas e outros pacientes.</li>
+</ol>
+
+O EasyDental se concentra em atender às necessidades específicas de pacientes e dentistas, tornando o processo de agendamento e gerenciamento de consultas odontológicas mais eficiente, transparente e conveniente. Além disso, busca melhorar a experiência geral de cuidados odontológicos para todas as partes envolvidas.
 
 ## Justificativa
 
