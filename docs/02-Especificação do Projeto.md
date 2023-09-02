@@ -44,42 +44,46 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|ID|Descrição do Requisito|Prioridade|
+|------|------|------|
+|RF-01|O cliente deve ser capaz de se cadastrar informando obrigatoriamente seu nome, e-mail, senha e idade.|ALTA| 
+|RF-02|O dentista deve ser capaz de se cadastrar informando obrigatoriamente seu nome, e-mail, senha, idade, especialidade e, opcionalmente, horário de atendimento, local do consultório e descrição.|ALTA|
+|RF-03|O cliente deve ser capaz de fazer login usando seu e-mail e senha correspondentes.|ALTA|
+|RF-04|O dentista deve ser capaz de fazer login usando seu e-mail e senha correspondentes.|ALTA|
+|RF-05|O usuário (cliente ou dentista) deve ser capaz de visualizar a lista de dentistas disponíveis.|ALTA|
+|RF-06|O usuário (cliente ou dentista) deve ser capaz de filtrar a lista de dentistas por nome ou especialidade ou localidade.|ALTA|
+|RF-07|O usuário (cliente ou dentista) deve ser capaz de visualizar os detalhes de um dentista selecionado.|ALTA|
+|RF-08|O cliente, quando logado, deve poder agendar um horário com um dentista.|ALTA|
+|RF-09|O cliente, quando logado, não deve poder agendar o mesmo horário que já foi agendado previamente.|ALTA|
+|RF-10|O cliente, quando logado, não deve poder agendar o mesmo horário com mais de um dentista.|ALTA|
+|RF-11|O cliente, quando logado, deve poder visualizar os horários marcados por ele.|ALTA|
+|RF-12|O dentista, quando logado, deve poder visualizar os horários marcados pelos clientes.|ALTA|
+|RF-13|O cliente, quando logado, deve poder fazer alterações em seu próprio cadastro.|MÉDIA|
+|RF-14|O dentista, quando logado, deve poder fazer alterações em seu próprio cadastro.|MÉDIA|
+|RF-15|O cliente, quando logado, deve poder cancelar uma consulta com pelo menos um dia de antecedência.|MÉDIA|
+|RF-16|O dentista, quando logado, deve poder cancelar uma consulta com pelo menos um dia de antecedência.|MÉDIA|
+|RF-17|O cliente deve poder excluir sua própria conta.|BAIXA|
+|RF-18|O dentista deve poder excluir sua própria conta.|BAIXA|
+|RF-19|O sistema deve ter um mecanismo de recuperação de senha para os usuários (cliente ou dentista)|BAIXA|
+|RF-20|O sistema deve notificar o dentista quando uma consulta é marcada.|BAIXA|
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|ID|Descrição do Requisito|Prioridade|
+|------|------|------|
+|RNF-01|O site deverá ser responsivo se adaptando para telas de smartphones e desktops|ALTA|
+|RNF-02|O site deverá seguir um padrão de design para cores dos componentes integrantes das páginas, tamanho e tipo de fonte de escrita|MÉDIA|
+|RNF-03|O site deverá apresentar um desempenho estável, com um tempo de resposta adequado para as ações que envolvam o processamento|BAIXA|
 
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|RE-01| O sistema deve ser desenvolvido em uma plataforma que suporte a linguagem C#. |
-|RE-02| O sistema deve armazenar os dados dos clientes e dentistas de forma segura. |
-|RE-03| O sistema deve garantir a privacidade dos dados pessoais dos clientes e dentistas. |
+|ID|Restrição|
+|------|------|
+|RE-01|O sistema deve ser desenvolvido em uma plataforma que suporte a linguagem C#.|
+|RE-02|O sistema deve armazenar os dados dos clientes e dentistas de forma segura.|
+|RE-03|O sistema deve garantir a privacidade dos dados pessoais dos clientes e dentistas.|
 
 ## Diagrama de Casos de Uso
 
