@@ -77,15 +77,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|RE-01| O sistema deve ser desenvolvido em uma plataforma que suporte a linguagem C#. |
+|RE-02| O sistema deve armazenar os dados dos clientes e dentistas de forma segura. |
+|RE-03| O sistema deve garantir a privacidade dos dados pessoais dos clientes e dentistas. |
 
 ## Diagrama de Casos de Uso
 
