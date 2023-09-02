@@ -41,7 +41,7 @@ Ao abordar esses desafios com uma solução inovadora, o EasyDental não apenas 
 
 <li><strong>Aprimorar a Experiência do Paciente:</strong> Facilitando o encontro de dentistas adequados, reduzindo o tempo de espera e garantindo informações transparentes, o EasyDental visa tornar a experiência do paciente mais satisfatória e conveniente.</li>
 <li><strong>Aumentar a Eficiência dos Dentistas:</strong> Oferecendo ferramentas de gerenciamento de horários eficazes, o EasyDental permite que os dentistas otimizem seus atendimentos, evitem cancelamentos e proporcionem um serviço de qualidade.</li>
-<li><strong>Contribuir para a Transformação Digital na Saúde:</strong> Em um momento em que a digitalização da área de saúde está em ascensão, o EasyDental se alinha com essa tendência, fornecendo uma solução tecnologicamente avançada para uma necessidade fundamental.</li>
+<li><strong>Contribuir para a Transformação Digital na Saúde:</strong> Em um momento em que a digitalização da área de saúde está em ascensão, o EasyDental se alinha com essa tendência, fornecendo uma solução tecnologicamente avançada para uma necessidade fundamental.</li><br />
 
 Portanto, a criação do EasyDental não apenas resolve uma dor do mercado, mas também promove a eficiência, transparência e acessibilidade no agendamento de consultas odontológicas, beneficiando pacientes, dentistas e a indústria de saúde como um todo.
 
