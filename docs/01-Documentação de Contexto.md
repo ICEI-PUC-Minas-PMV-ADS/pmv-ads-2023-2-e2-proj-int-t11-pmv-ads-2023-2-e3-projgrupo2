@@ -8,11 +8,13 @@ Imagine encontrar o dentista certo, marcar uma consulta em poucos cliques, evita
 
 No contexto atual, o agendamento de consultas odontológicas é frequentemente uma tarefa desafiadora para pacientes e dentistas. A falta de uma plataforma eficiente e acessível para marcar e gerenciar horários resulta em diversos problemas:
 
+<ol>
 <li><strong>Dificuldade no Encontro de Dentistas Adequados:</strong> Pacientes muitas vezes têm dificuldade em encontrar dentistas que atendam às suas necessidades específicas, como especialidades ou localizações convenientes.</li>
 <li><strong>Agendamento Ineficiente:</strong> O processo de agendamento, que frequentemente envolve telefonemas ou visitas presenciais, é demorado e propenso a erros, como horários duplicados.</li>
 <li><strong>Falta de Transparência:</strong> A falta de informações detalhadas sobre os dentistas, como horários de atendimento, cria incerteza para os pacientes.</li>
 <li><strong>Tempo Desperdiçado:</strong> Tanto pacientes quanto dentistas perdem tempo significativo gerenciando e ajustando horários, o que poderia ser utilizado de forma mais produtiva.</li>
 <li><strong>Potencial para Cancelamentos Tardios:</strong> A ausência de um sistema de gerenciamento de horários eficaz pode levar a cancelamentos de última hora, prejudicando a clínica e outros pacientes.</li>
+</ol>
 
 Este cenário demonstra a necessidade premente de uma solução que simplifique o agendamento de consultas odontológicas, ofereça transparência e eficiência, além de melhorar a experiência tanto para os pacientes quanto para os próprios dentistas. É nesse contexto que o EasyDental se propõe a resolver esses problemas com uma plataforma inovadora e acessível.
 
