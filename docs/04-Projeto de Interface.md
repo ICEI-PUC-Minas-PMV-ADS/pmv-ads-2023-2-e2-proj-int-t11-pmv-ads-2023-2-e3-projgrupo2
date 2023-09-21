@@ -1,7 +1,6 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
 No contexto do design da interface do sistema, estamos priorizando aspectos como rapidez, acessibilidade e facilidade de uso. Consequentemente, o projeto adota uma identidade visual consistente em todas as telas, otimizada tanto para computadores de mesa quanto para dispositivos móveis. 
 

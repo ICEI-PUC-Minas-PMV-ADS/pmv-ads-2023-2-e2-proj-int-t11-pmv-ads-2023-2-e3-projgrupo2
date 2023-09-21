@@ -1,7 +1,6 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
 A metodologia de desenvolvimento de software é o esqueleto sobre o qual todo o processo de criação de aplicativos e sistemas é construído. Ela não apenas define as diretrizes e os passos a serem seguidos, mas também molda a maneira como uma equipe trabalha em conjunto para atingir metas e objetivos específicos. Para estabelecer uma base sólida para nossa abordagem, incorporamos um referencial teórico que fundamenta nossas práticas e decisões (Creswell, 2014; Yin, 2017). 
 
@@ -56,12 +55,7 @@ etiquetas:
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
 
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+
 
 ## Gerenciamento de Projeto
 
@@ -131,11 +125,7 @@ As tarefas foram divididas em etapas e serão distribuídas de acordos com as et
 
 » Registro de Teste de Usabilidade 
  
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+
 
 
 
@@ -165,6 +155,4 @@ Ferramenta de Diagramação (Figma):
 Optada para criar diagramas que ajudam a visualizar e compreender melhor os requisitos e arquitetura do sistema. A escolha do Lucidchart se deve à sua facilidade de uso e recursos de colaboração em tempo real.
 
  
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+
