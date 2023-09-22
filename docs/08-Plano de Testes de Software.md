@@ -17,7 +17,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir:
 
 # CT-01 – Cadastrar Cliente 
 
-** Requisitos Associados **
+** Requisitos Associados
 
 RF-01 - O cliente deve ser capaz de se cadastrar informando obrigatoriamente seu nome, e-mail, senha e idade. 
 
