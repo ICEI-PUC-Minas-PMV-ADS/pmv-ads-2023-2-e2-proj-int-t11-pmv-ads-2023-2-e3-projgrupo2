@@ -254,7 +254,7 @@ Verificar se não está sendo possível agendar um horário o mesmo horário dua
 
 7 Agende o mesmo horário 
 
-*Critérios de Êxito:  
+* Critérios de Êxito:  
 
 Site deve informar que não foi possível o agendamento, por já existir um agendamento no mesmo horário 
 
