@@ -11874,32 +11874,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\josem\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/mayrodriguez/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josem\\OneDrive\\Documentos\\GitHub\\Eassydentalmvc\\WebApplication2.csproj",
+      "projectUniqueName": "/Users/mayrodriguez/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/WebApplication2.csproj",
       "projectName": "WebApplication2",
-      "projectPath": "C:\\Users\\josem\\OneDrive\\Documentos\\GitHub\\Eassydentalmvc\\WebApplication2.csproj",
-      "packagesPath": "C:\\Users\\josem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josem\\OneDrive\\Documentos\\GitHub\\Eassydentalmvc\\obj\\",
+      "projectPath": "/Users/mayrodriguez/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/WebApplication2.csproj",
+      "packagesPath": "/Users/mayrodriguez/.nuget/packages/",
+      "outputPath": "/Users/mayrodriguez/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\josem\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/mayrodriguez/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.309/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11986,7 +11980,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
       }
     }
   }
