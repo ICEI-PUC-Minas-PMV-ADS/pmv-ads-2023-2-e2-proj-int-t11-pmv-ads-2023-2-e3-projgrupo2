@@ -6,9 +6,9 @@ No contexto do design da interface do sistema, estamos priorizando aspectos como
 
 ## Diagrama de Fluxo
 
-O diagrama de fluxo é uma representação que estuda a interação do usuário com o sistema interativo, muitas vezes sem a necessidade de detalhar o design das telas da interface. Esse enfoque permite um planejamento cuidadoso do design das interações, o que impacta diretamente na qualidade do wireframe interativo que será desenvolvido em seguida. O diagrama de fluxo pode ser construído usando "caixas" que contêm informações sobre os principais elementos da interface, como menus e acessos, bem como funcionalidades como edição, pesquisa, filtragem e configurações. A conexão entre essas "caixas" (Processos Concretos)  e "Losangulos"(possiveis alteraçoes, indica um ou outra açao) : (https://www.figma.com/file/zMu1LGM81gEggICDv1YWJn/Projeto-Final-(Copy)?type=design&node-id=0%3A1&mode=design&t=uxCIfaEFFpohJFHT-1 )
+O diagrama de fluxo é uma representação que estuda a interação do usuário com o sistema interativo, muitas vezes sem a necessidade de detalhar o design das telas da interface. Esse enfoque permite um planejamento cuidadoso do design das interações, o que impacta diretamente na qualidade do wireframe interativo que será desenvolvido em seguida. O diagrama de fluxo pode ser construído usando "caixas" que contêm informações sobre os principais elementos da interface, como menus e acessos, bem como funcionalidades como edição, pesquisa, filtragem e configurações. A conexão entre essas "caixas" (Processos Concretos)  e "Losangulos"(possiveis alteraçoes, indica um ou outra açao) : https://miro.com/app/board/uXjVNZwkV2w=/?share_link_id=53212244677
 
-![Imagem 04 Diagrama de Fluxo 1](img/diagrama1.png)
+
 ![Imagem 05 Diagrama de Fluxo 2](img/Diagrama3.png)
 
 ## Wireframe Interativo 
