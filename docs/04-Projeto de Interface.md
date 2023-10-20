@@ -32,10 +32,10 @@ A tela de home-page mostra informações de como funcionaria o sistema e sendo p
 
 ![Imagem 05 Tela Home](img/Tela%20Home.png)
 
-Tela Agendar 
+Tela Dentista
 
 Nessa parte será possível visualizar os dentistas cadastrados, e visualizar suas especialidades, será possível através de uma barra lateral filtrar por localidade e especialidade. Para acessar mais informações do dentista ele irá para a próxima tela a seguir.   
-![Imagem 06 Tela Agendar](img/Tela%20Agendar.png)
+![Imagem 06 Tela Dentista](img/Tela%20Agendar.png)
 
 Tela mais informações sobre o Dentista 
 

@@ -1,12 +1,49 @@
 # Template Padrão da Aplicação
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
+Template do Site 
 
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente, conforme Figura 05. 
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+![Imagem 05 Tela Home](img/Tela%20Home.png)
+
+O template criado está disponível no site https://www.figma.com/file/j8f1c93Odr0cVKPrZHeUSz/Projeto-Final?node-id=0%3A1&t=blsZrlSYQwIUruCI-1. e é composto pelos seguintes layouts:  
+
+* Menu principal 
+
+* Tela principal 
+
+* A responsividade segue o padrão do Bootstrap 
+
+* Tela Home 
+
+Nessa Tela explica melhor o funcionamento do site e suas praticidades ao utilizar a aplicação. 
+
+![Imagem 05 Tela Home](img/Tela%20Home.png)
+
+* Tela Agendar  
+
+È possivel visualizar as datas e horarios  disponiveis. Somente se o paciente ou dentista tiver o cadastro 
+
+![Imagem 06 Tela Agendar](img/Tela%20Agendar.png)
+
+* Tela Dentistas  
+
+Local aonde os pacientes poderam ver os dentistas cadastrados 
+
+![Imagem 06 Tela Dentista](img/Tela%20Agendar.png)
+
+* Tela Login Paciente 
+
+È possivel o paciente fazer o cadastro  
+![Imagem 09 Tela Cadastro Paciente](img/Tela%20Cadastro%20Paciente.png)
+* Tela Login Dentista 
+
+È possivel o Dentista fazer o cadastro  
+
+![Imagem 10 Tela Cadastro Dentista](img/Tela%20Cadastro%20Dentista.png)
+
+Tela Entrar 
+
+È possivel entrar no sistema
+![Imagem 08 Tela Login](img/Tela%20Login.png)
+
