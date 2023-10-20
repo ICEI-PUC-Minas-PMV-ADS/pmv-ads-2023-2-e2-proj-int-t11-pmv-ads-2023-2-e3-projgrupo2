@@ -16,9 +16,7 @@ O template criado está disponível no site https://www.figma.com/file/j8f1c93Od
 
 * Tela Home 
 
-Nessa Tela explica melhor o funcionamento do site e suas praticidades ao utilizar a aplicação. 
 
-![Imagem 05 Tela Home](img/Tela%20Home.png)
 
 * Tela Agendar  
 
