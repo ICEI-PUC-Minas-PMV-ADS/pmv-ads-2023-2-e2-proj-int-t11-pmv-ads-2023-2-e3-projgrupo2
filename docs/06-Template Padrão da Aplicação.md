@@ -22,7 +22,7 @@ O template criado está disponível no site https://www.figma.com/file/j8f1c93Od
 
 È possivel visualizar as datas e horarios  disponiveis. Somente se o paciente ou dentista tiver o cadastro 
 
-![Imagem 06 Tela Agendar](img/Tela%20Agendar.png)
+![Imagem 11 Tela Agendamento](img/Tela%20Agendamento.png)
 
 * Tela Dentistas  
 
