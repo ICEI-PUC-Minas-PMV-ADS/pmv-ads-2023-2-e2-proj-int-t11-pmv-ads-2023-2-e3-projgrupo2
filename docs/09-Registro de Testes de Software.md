@@ -21,11 +21,11 @@ CT-01 – Cadastrar Cliente
 
 1) Acessar a página home do site. 
 
-![Pagina Home](img/pgcadastrocliente.png)
+![Pagina Home](img/pghome.png)
 
 2) Navegar até a seção "Cadastro Cliente". 
 
-![Pagina Cadastro Cliente](img/pgcadastrocliente.png)
+![Pagina Cadastro Cliente](img/pghome.png)
 
 3) Preencher todos os campos do formulário. 
 
@@ -42,11 +42,11 @@ CT-02 – Cadastrar Cliente
 
 1) Acessar a página home do site. 
 
-![Pagina Home](img/pgcadastrocliente.png)
+![Pagina Home](img/pghome.png)
 
 2) Navegar até a seção "Cadastro Cliente". 
 
-![Pagina Cadastro Dentista](img/pgcadastrocliente.png)
+![Pagina Cadastro Dentista](img/pghome.png)
 
 3) Navegar até a seçao "Cadastro Dentista"
 
@@ -66,11 +66,11 @@ CT-03 – Login Cliente
 
 1) Acessar a página home do site. 
 
-![Pagina Home](img/pgcadastrocliente.png)
+![Pagina Home](img/pghome.png)
 
 2) Navegar até a seçao "Login"
 
-![Pagina Login Cliente](img/logincliente.png)
+![Pagina Login Cliente](img/pghome.png)
 
 3) Preencher todos os campos do formulário. 
 
@@ -91,11 +91,11 @@ CT-04 – Login Cliente
 
 1) Acessar a página home do site. 
 
-![Pagina Home](img/pgcadastrocliente.png)
+![Pagina Home](img/pghome.png)
 
 2) Navegar até a seção "Login". 
 
-![Pagina Login Cliente](img/pgcadastrocliente.png)
+![Pagina Login Cliente](img/pghome.png)
 
 3) Navegar até a seção "Login Dentista". 
 
