@@ -41,10 +41,7 @@
                             <a class="nav-link" href="@Url.Action("Index","UsuarioDentistas2")">Dentista</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="@Url.Action("Create", "UsuarioClientes")" class="btn btn-primary">Cadastrar Cliente</a>
-
-                        <li>
+                        
                                 @if (User.Identity.IsAuthenticated)
                                 {
                             <li class="nav-item">
@@ -58,7 +55,7 @@
                             </li>
                                 }
 
-                        <</ul>>
+                        </ul>
                 
                 </div>
             </div>
