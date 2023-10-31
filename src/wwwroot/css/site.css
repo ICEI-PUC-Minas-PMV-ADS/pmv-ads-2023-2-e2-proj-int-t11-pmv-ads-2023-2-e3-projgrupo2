@@ -16,3 +16,11 @@ html {
 body {
   margin-bottom: 60px;
 }
+/* Estilos para o footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: left; /* Centraliza o conteúdo no footer */
+}
+

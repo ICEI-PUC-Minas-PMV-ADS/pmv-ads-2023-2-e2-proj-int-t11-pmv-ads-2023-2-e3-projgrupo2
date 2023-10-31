@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EassyDental.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using WebApplication2.Models;
 
-namespace WebApplication2.Controllers
+namespace EassyDental.Controllers
 {
     public class HomeController : Controller
     {

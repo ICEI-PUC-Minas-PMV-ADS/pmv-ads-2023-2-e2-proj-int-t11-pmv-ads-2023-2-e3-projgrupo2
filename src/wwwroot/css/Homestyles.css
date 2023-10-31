@@ -1,0 +1,116 @@
+﻿
+
+body .carousel-caption h1 {
+    color: white;
+    
+}
+.card-text {
+    text-align: justify;
+   font-size:20px;
+}
+
+
+/* styles.css */
+body {
+    background-color: #f8f9fa; /* Cor de fundo do corpo da página */
+    font-family: Arial, sans-serif; /* Tipo de fonte padrão */
+}
+
+.carousel-caption {
+
+    padding: 20px;
+    border-radius: 10px; /* Cantos arredondados do bloco de texto */
+}
+
+    .carousel-caption h1 {
+        color: white; /* Cor do texto do título no carrossel */
+    }
+
+
+    /* Estilize os botões de carrossel */
+    .carousel-caption .btn-primary {
+        background-color: #a8966f; /* Cor de fundo do botão */
+        border-color: #a8966f; /* Cor da borda do botão */
+        display: inline-block; /* Faça o botão um bloco de linha para torná-lo pequeno */
+        padding: 8px 16px; /* Adicione preenchimento para tornar o botão um pouco maior */
+        border-radius: 5px; /* Adicione bordas arredondadas */
+    }
+    /* Estilos padrão para o carrossel */
+    .carousel-caption h1 {
+        font-size: 2rem; /* Tamanho do título */
+        margin-bottom: 1rem; /* Margem inferior do título */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Tamanho do texto */
+        margin-bottom: 1rem; /* Margem inferior do texto */
+    }
+
+    .carousel-caption .btn-primary {
+       
+        padding: 0.3rem 1rem; /* Espaçamento interno do botão */
+    }
+
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: -5px; /* Posiciona a parte inferior da .carousel-caption na parte inferior do carrossel */
+        left: 8px; /* Alinha a .carousel-caption à borda esquerda do carrossel */
+        right: 0; /* Alinha a .carousel-caption à borda direita do carrossel */
+        padding: 5px; /* Adiciona espaçamento interno para o conteúdo dentro da .carousel-caption */
+        text-align: left; /* Alinha o texto à esquerda dentro da .carousel-caption */
+    }
+
+        .carousel-caption h1 {
+            font-size: 0.9rem; /* Tamanho do título para telas médias */
+        }
+
+        .carousel-caption p {
+            font-size: 0.5rem; /* Tamanho do texto para telas médias */
+            margin-top: 1px; /* Margem superior do parágrafo para empurrá-lo para baixo */
+        }
+
+        .carousel-caption .btn-primary {
+            font-size: 0.3rem; /* Tamanho do texto do botão para telas médias */
+            padding: 0.3rem 0.2rem; /* Espaçamento interno do botão para telas médias */
+            margin-top: 1px; /* Margem superior do botão para mantê-lo na parte inferior */
+        }
+
+    .img-fluid {
+        max-width: 180px; /* Define o tamanho máximo da imagem para telas menores */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .card-text {
+        font-size: 12px; /* Define o tamanho da fonte para telas menores */
+    }
+}
+
+
+
+/* Estilos para telas pequenas (por exemplo, smartphones) */
+@media (max-width: 480px) {
+    .carousel-caption h1 {
+        font-size: 0.7rem; /* Tamanho do título para telas pequenas */
+    }
+
+    .carousel-caption p {
+        font-size: 0.5rem; /* Tamanho do texto para telas pequenas */
+    }
+
+    .carousel-caption .btn-primary {
+        font-size: 0.8rem; /* Tamanho do texto do botão para telas pequenas */
+        padding: 0.3rem 0.1rem; /* Espaçamento interno do botão para telas pequenas */
+    }
+
+    .img-fluid {
+        max-width: 180px; /* Define o tamanho máximo da imagem para telas menores */
+        height: auto; /* Mantém a proporção da imagem */
+        
+    }
+
+    .card-text {
+        font-size: 10px; /* Define o tamanho da fonte para telas menores */
+    }
+}
+

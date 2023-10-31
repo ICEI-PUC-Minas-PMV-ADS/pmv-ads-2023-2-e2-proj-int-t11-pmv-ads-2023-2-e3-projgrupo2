@@ -1,7 +1,7 @@
+using EassyDental.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using WebApplication2.Models;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer("Server=tcp:eassydentalmvcdbserver.database.windows.net,1433;Initial Catalog=Eassydentalmvc_db;Persist Security Info=False;User ID=mayra;Password=1234567A.;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
+builder.Services.AddDbContext<AppDbContext>(Options => Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnections")));
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
@@ -25,8 +25,8 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.AccessDeniedPath = "/UsuarioDentistas/AccessDenied/";
         options.LoginPath = "/UsuarioDentistas/login/";
     });
-  
-        
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

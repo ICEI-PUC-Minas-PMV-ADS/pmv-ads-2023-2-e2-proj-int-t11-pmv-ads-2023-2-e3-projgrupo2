@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using WebApplication2.Models;
+﻿using EassyDental.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace WebApplication2.Models
+namespace EassyDental.Models
 {
     public class AppDbContext : DbContext
     {

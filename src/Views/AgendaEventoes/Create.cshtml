@@ -1,51 +1,67 @@
-﻿@model WebApplication2.Models.AgendaEvento
+﻿@model EassyDental.Models.AgendaEvento
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Agenda";
 }
 
-<h1>Create</h1>
+<section class="vh-100">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 text-black">
+                <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+                    <form asp-action="Create" style="width: 23rem;" onsubmit="return validateForm()">
+                        <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Create</h3>
 
-<h4>AgendaEvento</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="DataHora" class="control-label"></label>
-                <input asp-for="DataHora" class="form-control" />
-                <span asp-validation-for="DataHora" class="text-danger"></span>
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="DataHora">DataHora</label>
+                            <input asp-for="DataHora" class="form-control form-control-lg" />
+                            <span asp-validation-for="DataHora" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="Titulo">Titulo</label>
+                            <input asp-for="Titulo" class="form-control form-control-lg" />
+                            <span asp-validation-for="Titulo" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="Descricao">Descricao</label>
+                            <input asp-for="Descricao" class="form-control form-control-lg" />
+                            <span asp-validation-for="Descricao" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="UsuarioClienteId">Cliente</label>
+                            <select asp-for="UsuarioClienteId" class="form-control form-control-lg"
+                                    asp-items="ViewBag.UsuarioClienteId"></select>
+                            <span asp-validation-for="UsuarioClienteId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="UsuarioDentistaId">Dentista</label>
+                            <select asp-for="UsuarioDentistaId" class="form-control form-control-lg"
+                                    asp-items="ViewBag.UsuarioDentistaId"></select>
+                            <span asp-validation-for="UsuarioDentistaId" class="text-danger"></span>
+                        </div>
+
+                        <button class="btn btn-info btn-lg btn-block" style="background-color: #a8966f; color:white; border: none;" type="submit">Create</button>
+
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Titulo" class="control-label"></label>
-                <input asp-for="Titulo" class="form-control" />
-                <span asp-validation-for="Titulo" class="text-danger"></span>
+
+            <div class="col-md-6 px-0 d-none d-md-block">
+                <img src="https://img.freepik.com/fotos-gratis/retrato-do-homem-caucasiano-moderno-com-barba-vestindo-roupas-casuais-lendo-a-tela-do-smartphone-e-sorrindo_1258-160499.jpg?w=1800&t=st=1698751025~exp=1698751625~hmac=4992a6c97807fbf57a947d7b2bef489a0b9f3c1eb5bcebf40068f476a5942b75"
+                     alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
             </div>
-            <div class="form-group">
-                <label asp-for="Descricao" class="control-label"></label>
-                <input asp-for="Descricao" class="form-control" />
-                <span asp-validation-for="Descricao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UsuarioClienteId" class="control-label"></label>
-                <select asp-for="UsuarioClienteId" class ="form-control" asp-items="ViewBag.UsuarioClienteId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="UsuarioDentistaId" class="control-label"></label>
-                <select asp-for="UsuarioDentistaId" class ="form-control" asp-items="ViewBag.UsuarioDentistaId"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
+</section>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+<script>
+    function validateForm() {
+        // Lógica de validação aqui, se necessário
+        // Retorne true se o formulário estiver válido, ou false para impedir o envio
+        return true;
+    }
+</script>

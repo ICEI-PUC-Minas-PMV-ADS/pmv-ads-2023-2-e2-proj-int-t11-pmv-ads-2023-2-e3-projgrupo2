@@ -1,0 +1,14 @@
+﻿/* Estilos para os ícones das redes sociais */
+.social-icons a {
+    color: white;
+    font-size: 14px; /* Tamanho dos ícones */
+    max-width: 20px; /* Largura máxima dos ícones */
+    margin-right: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+/* Estilos para os ícones das redes sociais */
+.social-icons {
+    text-align: left; /* Alinha os ícones à esquerda */
+}
+

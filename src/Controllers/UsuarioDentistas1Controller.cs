@@ -5,9 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using WebApplication2.Models;
+using EassyDental.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
-namespace WebApplication2.Controllers
+namespace EassyDental.Controllers
 {
     public class UsuarioDentistas1Controller : Controller
     {
@@ -21,10 +24,58 @@ namespace WebApplication2.Controllers
         // GET: UsuarioDentistas1
         public async Task<IActionResult> Index()
         {
-              return View(await _context.UsuariosDentistas.ToListAsync());
+            return View(await _context.UsuariosDentistas.ToListAsync());
         }
 
-        // GET: UsuarioDentistas1/Details/5
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(string email, string senha)
+        {
+            var usuario = await _context.UsuariosDentistas.FirstOrDefaultAsync(u => u.Email == email);
+
+            if (usuario != null && BCrypt.Net.BCrypt.Verify(senha, usuario.Senha))
+            {
+                var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Name, usuario.Name),
+            new Claim(ClaimTypes.NameIdentifier, usuario.Email.ToString())
+        };
+
+                var usuarioIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.UtcNow.AddHours(8),
+                    IsPersistent = true,
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+                return Redirect(Url.Action("Index", "AgendaEventoes"));
+            }
+            else
+            {
+                ViewBag.Message = "Email e/ou senha inválidos!";
+                return View();
+            }
+        }
+
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Login", "UsuariosDentistas1");
+
+        }
+
+
+
+
+        // GET: UsuarioDentistas2/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.UsuariosDentistas == null)
@@ -41,7 +92,6 @@ namespace WebApplication2.Controllers
 
             return View(usuarioDentista);
         }
-
         // GET: UsuarioDentistas1/Create
         public IActionResult Create()
         {
@@ -53,28 +103,17 @@ namespace WebApplication2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Telefone,Email,CRO,Nome_da_clinica,Endereço,Senha,Foto,FotoContentType,FotoFileName")] UsuarioDentista usuarioDentista, IFormFile foto)
+        public async Task<IActionResult> Create([Bind("Id,Name,Telefone,Email,CRO,Especialidade,Nome_da_clinica,Endereço,Senha,FotoFileName,HorarioAtendimentoInicio,HorarioAtendimentoFim")] UsuarioDentista usuarioDentista)
         {
-            if (foto != null && foto.Length > 0)
-            {
-                using (var memoryStream = new MemoryStream())
-                {
-                    await foto.CopyToAsync(memoryStream);
-                    usuarioDentista.Foto = memoryStream.ToArray();
-                    usuarioDentista.FotoContentType = foto.ContentType;
-                    usuarioDentista.FotoFileName = foto.FileName;
-                }
-            }
-
             if (ModelState.IsValid)
             {
+                usuarioDentista.Senha = BCrypt.Net.BCrypt.HashPassword(usuarioDentista.Senha);
                 _context.Add(usuarioDentista);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(usuarioDentista);
         }
-
 
         // GET: UsuarioDentistas1/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -97,7 +136,7 @@ namespace WebApplication2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Telefone,Email,CRO,Nome_da_clinica,Endereço,Senha,Foto,FotoContentType,FotoFileName")] UsuarioDentista usuarioDentista)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Telefone,Email,CRO,Especialidade,Nome_da_clinica,Endereço,Senha,FotoFileName,HorarioAtendimentoInicio,HorarioAtendimentoFim")] UsuarioDentista usuarioDentista)
         {
             if (id != usuarioDentista.Id)
             {
@@ -108,6 +147,7 @@ namespace WebApplication2.Controllers
             {
                 try
                 {
+                    usuarioDentista.Senha = BCrypt.Net.BCrypt.HashPassword(usuarioDentista.Senha);
                     _context.Update(usuarioDentista);
                     await _context.SaveChangesAsync();
                 }

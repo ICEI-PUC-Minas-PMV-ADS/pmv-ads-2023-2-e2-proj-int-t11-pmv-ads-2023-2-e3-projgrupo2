@@ -1,4 +1,4 @@
-namespace WebApplication2.Models
+namespace EassyDental.Models
 {
     public class ErrorViewModel
     {

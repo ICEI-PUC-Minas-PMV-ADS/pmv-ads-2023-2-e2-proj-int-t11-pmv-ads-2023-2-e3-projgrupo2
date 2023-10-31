@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Eassydentalmvc</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="./css/Sharedstyles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Eassydentalmvc.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    
 </head>
 <body>
     <header>
@@ -14,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="/img/logo.png" alt="Logo" width="120" height="40" class="d-inline-block align-top">
+                    <img src="/img/logo1.png" alt="Logo" width="140" height="35" class="d-inline-block align-top">
 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -38,25 +41,24 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index","UsuarioDentistas2")">Dentista</a>
+                            <a class="nav-link" href="@Url.Action("Index","UsuarioDentistas1")">Dentista</a>
                         </li>
 
-                        
-                                @if (User.Identity.IsAuthenticated)
-                                {
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
                             <li class="nav-item">
                                 Olá @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="UsuarioClientes" asp-action="Logout">Sair</a>
                             </li>
-                                }
-                                else
-                                {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="UsuarioClientes" asp-action="Login">Login</a>
-                            </li>
-                                }
+                        }
+                        else
+                        {
+                            <a class="nav-link text-dark" asp-area="" asp-controller="UsuarioClientes" asp-action="Login" style="background-color: #a8966f; color: white !important; border-radius: 15px; padding: 10px 20px; transition: background-color 0.3s ease;">Login</a>
 
-                        </ul>
-                
+                        }
+
+                    </ul>
+
                 </div>
             </div>
         </nav>
@@ -67,14 +69,81 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - Eassydentalmvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div class="container my-5">
+
+        <footer class="text-center text-white" style="background-color: #379bbf;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon facebook-icon"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon twitter-icon"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon google-icon"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-google"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon instagram-icon"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon linkedin-icon"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon github-icon"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
         </div>
-    </footer>
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
+
 </html>

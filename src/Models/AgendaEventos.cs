@@ -1,4 +1,7 @@
-﻿namespace WebApplication2.Models;
+﻿using EassyDental.Models;
+
+
+namespace EassyDental.Models;
 public class AgendaEvento
 {
     public int Id { get; set; }
