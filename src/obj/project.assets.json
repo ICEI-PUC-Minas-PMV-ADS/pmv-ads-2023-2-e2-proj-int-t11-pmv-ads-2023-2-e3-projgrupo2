@@ -11177,11 +11177,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josem\\OneDrive\\Desktop\\EassyDental\\EassyDental.csproj",
+      "projectUniqueName": "C:\\Users\\josem\\OneDrive\\Desktop\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2\\src\\EassyDental.csproj",
       "projectName": "EassyDental",
-      "projectPath": "C:\\Users\\josem\\OneDrive\\Desktop\\EassyDental\\EassyDental.csproj",
+      "projectPath": "C:\\Users\\josem\\OneDrive\\Desktop\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2\\src\\EassyDental.csproj",
       "packagesPath": "C:\\Users\\josem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josem\\OneDrive\\Desktop\\EassyDental\\obj\\",
+      "outputPath": "C:\\Users\\josem\\OneDrive\\Desktop\\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2\\src\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

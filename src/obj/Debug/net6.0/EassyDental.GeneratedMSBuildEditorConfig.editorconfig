@@ -9,105 +9,105 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EassyDental
 build_property.RootNamespace = EassyDental
-build_property.ProjectDir = C:\Users\josem\OneDrive\Desktop\EassyDental\
+build_property.ProjectDir = C:\Users\josem\OneDrive\Desktop\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2\src\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\josem\OneDrive\Desktop\EassyDental
+build_property.MSBuildProjectDirectory = C:\Users\josem\OneDrive\Desktop\pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2\src
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/AgendaEventoes/Create.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/AgendaEventoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhRXZlbnRvZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/AgendaEventoes/Delete.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/AgendaEventoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhRXZlbnRvZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/AgendaEventoes/Details.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/AgendaEventoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhRXZlbnRvZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/AgendaEventoes/Edit.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/AgendaEventoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhRXZlbnRvZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/AgendaEventoes/Index.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/AgendaEventoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhRXZlbnRvZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/Home/Index.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/Home/Privacy.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/Shared/Error.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioClientes/Create.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioClientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0NsaWVudGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioClientes/Delete.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioClientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0NsaWVudGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioClientes/Details.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioClientes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0NsaWVudGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioClientes/Edit.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioClientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0NsaWVudGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioClientes/Index.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioClientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0NsaWVudGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioClientes/Login.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioClientes/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0NsaWVudGVzXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioDentistas1/Create.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioDentistas1/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0RlbnRpc3RhczFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioDentistas1/Delete.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioDentistas1/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0RlbnRpc3RhczFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioDentistas1/Details.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioDentistas1/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0RlbnRpc3RhczFcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioDentistas1/Edit.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioDentistas1/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0RlbnRpc3RhczFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioDentistas1/Index.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioDentistas1/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0RlbnRpc3RhczFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/UsuarioDentistas1/Login.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/UsuarioDentistas1/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb0RlbnRpc3RhczFcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/_ViewImports.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/_ViewStart.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/josem/OneDrive/Desktop/EassyDental/Views/Shared/_Layout.cshtml]
+[C:/Users/josem/OneDrive/Desktop/pmv-ads-2023-2-e2-proj-int-t11-pmv-ads-2023-2-e3-projgrupo2/src/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ckh5fx7u47
