@@ -31,3 +31,10 @@ src/obj/project.nuget.cache
 *.json
 *.cache
 *.json
+*.cache
+src/obj/Debug/net6.0/EassyDental.assets.cache
+*.json
+*.props
+*.targets
+*.json
+*.cache
