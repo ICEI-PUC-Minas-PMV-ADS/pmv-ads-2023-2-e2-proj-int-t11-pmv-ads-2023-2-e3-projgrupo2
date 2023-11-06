@@ -37,11 +37,14 @@
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
+        <form asp-action="DeleteConfirmed" asp-route-id="@Model.Id" method="post">
+            <input type="submit" value="Delete" class="btn btn-danger" />
+        </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a href="@Url.Action("Index", "UsuarioDentistas")">Back to List</a>
 </div>
 
 @section Scripts {

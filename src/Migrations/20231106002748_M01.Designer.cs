@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EassyDental.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231030170607_N01")]
-    partial class N01
+    [Migration("20231106002748_M01")]
+    partial class M01
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,15 +32,8 @@ namespace EassyDental.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<DateTime>("DataHora")
+                    b.Property<DateTime>("HorarioConsulta")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Descricao")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Titulo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UsuarioClienteId")
                         .HasColumnType("int");
@@ -54,7 +47,7 @@ namespace EassyDental.Migrations
 
                     b.HasIndex("UsuarioDentistaId");
 
-                    b.ToTable("AgendaEventos");
+                    b.ToTable("AgendaEvento");
                 });
 
             modelBuilder.Entity("EassyDental.Models.UsuarioCliente", b =>
@@ -102,27 +95,24 @@ namespace EassyDental.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Endereço")
+                    b.Property<string>("Endereco")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Especialidade")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Especialidade")
+                        .HasColumnType("int");
 
-                    b.Property<string>("FotoFileName")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<TimeSpan>("HorarioAbertura")
+                        .HasColumnType("time");
 
-                    b.Property<string>("HorarioAtendimentoFim")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HorarioAtendimentoInicio")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<TimeSpan>("HorarioEncerramento")
+                        .HasColumnType("time");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Nome_da_clinica")
+                    b.Property<string>("NomeClinica")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

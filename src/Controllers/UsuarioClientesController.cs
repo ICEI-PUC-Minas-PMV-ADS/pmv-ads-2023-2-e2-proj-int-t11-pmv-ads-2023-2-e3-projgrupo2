@@ -1,19 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using BCrypt.Net;
-using System.Security.Claims;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using NuGet.Protocol.Plugins;
 using EassyDental.Models;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
-namespace EassyDental.Models;
-
+namespace EassyDental.Controllers;
 
 public class UsuarioClientesController : Controller
 {
@@ -24,103 +15,92 @@ public class UsuarioClientesController : Controller
         _context = context;
     }
 
-    // GET: UsuarioClientes
-
-    public async Task<IActionResult> Index()
-    {
-        return View(await _context.UsuariosClientes.ToListAsync());
-
-    }
-
+    #region Login
+    [HttpGet]
     public IActionResult Login()
     {
+        ViewBag.Message = "";
         return View();
     }
+
     [HttpPost]
     public async Task<IActionResult> Login(string email, string senha)
     {
         var usuario = await _context.UsuariosClientes.FirstOrDefaultAsync(u => u.Email == email);
 
-        if (usuario != null && BCrypt.Net.BCrypt.Verify(senha, usuario.Senha))
+        if (usuario is not null && BCrypt.Net.BCrypt.Verify(senha, usuario.Senha))
         {
-            var claims = new List<Claim>
-        {
-            new Claim(ClaimTypes.Name, usuario.Name),
-            new Claim(ClaimTypes.NameIdentifier, usuario.Email.ToString())
-        };
+            List<Claim> claims = new ()
+            {
+                new Claim(ClaimTypes.Name, usuario.Name),
+                new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
+                new Claim(ClaimTypes.Role, "Cliente")
+            };
 
-            var usuarioIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-            ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
-            var props = new AuthenticationProperties
+            ClaimsIdentity userIdentity = new (claims, "login");
+            ClaimsPrincipal principal = new (userIdentity);
+
+            AuthenticationProperties props = new ()
             {
                 AllowRefresh = true,
-                ExpiresUtc = DateTime.UtcNow.AddHours(8),
-                IsPersistent = true,
+                ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
+                IsPersistent = true
             };
 
             await HttpContext.SignInAsync(principal, props);
-            return Redirect(Url.Action("Create", "AgendaEventoes"));
+
+            return RedirectToAction("Index", "UsuarioDentistas");
         }
         else
         {
             ViewBag.Message = "Email e/ou senha inválidos!";
             return View();
         }
-    }
-
-
-
+    } 
 
     public async Task<IActionResult> Logout()
     {
+        ViewBag.Message = "";
         await HttpContext.SignOutAsync();
-        return RedirectToAction("Login", "UsuarioClientes");
-
+        return RedirectToAction("Login");
     }
+    #endregion
 
-    // GET: UsuarioClientes/Details/5
-    public async Task<IActionResult> Details(int? id)
-    {
-        if (id == null || _context.UsuariosClientes == null)
-        {
-            return NotFound();
-        }
-
-        var usuarioCliente = await _context.UsuariosClientes
-            .FirstOrDefaultAsync(m => m.Id == id);
-        if (usuarioCliente == null)
-        {
-            return NotFound();
-        }
-
-        return View(usuarioCliente);
-    }
-
-    // GET: UsuarioClientes/Create
+    #region Create
+    [HttpGet]
     public IActionResult Create()
     {
         return View();
     }
 
-    // POST: UsuarioClientes/Create
-    // To protect from overposting attacks, enable the specific properties you want to bind to.
-    // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Id,Name,Telefone,Email,Senha")] UsuarioCliente usuarioCliente)
+    public async Task<IActionResult> Create(UsuarioCliente usuarioCliente)
     {
         if (ModelState.IsValid)
         {
             usuarioCliente.Senha = BCrypt.Net.BCrypt.HashPassword(usuarioCliente.Senha);
-            _context.Add(usuarioCliente);
+            _context.UsuariosClientes.Add(usuarioCliente);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Login");
         }
         return View(usuarioCliente);
     }
+    #endregion
 
-    // GET: UsuarioClientes/Edit/5
-    public async Task<IActionResult> Edit(int? id)
+    [HttpGet]
+    public async Task<IActionResult> IndexEventos(int id)
+    {
+        var eventos = await _context.AgendaEventos
+            .Include(e => e.UsuarioDentista)
+            .ToListAsync();
+
+        var eventosCliente = eventos.FindAll(e => e.UsuarioClienteId == id);
+        return View(eventosCliente);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Details(int? id)
     {
         if (id == null || _context.UsuariosClientes == null)
         {
@@ -132,15 +112,30 @@ public class UsuarioClientesController : Controller
         {
             return NotFound();
         }
+
         return View(usuarioCliente);
     }
 
-    // POST: UsuarioClientes/Edit/5
-    // To protect from overposting attacks, enable the specific properties you want to bind to.
-    // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-    [HttpPost]
+    #region Edit
+    [HttpGet]
+    public async Task<IActionResult> Edit(int? id)
+    {
+        if (id == null || _context.UsuariosClientes == null)
+        {
+            return NotFound();
+        }
+
+        var usuariosClientes = await _context.UsuariosClientes.FindAsync(id);
+        if (usuariosClientes == null)
+        {
+            return NotFound();
+        }
+        return View(usuariosClientes);
+    }
+
+    [HttpPut]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Telefone,Email,Senha")] UsuarioCliente usuarioCliente)
+    public async Task<IActionResult> Edit(int id, UsuarioCliente usuarioCliente)
     {
         if (id != usuarioCliente.Id)
         {
@@ -166,31 +161,13 @@ public class UsuarioClientesController : Controller
                     throw;
                 }
             }
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index", "UsuarioDentistas");
         }
         return View(usuarioCliente);
     }
+    #endregion
 
-    // GET: UsuarioClientes/Delete/5
-    public async Task<IActionResult> Delete(int? id)
-    {
-        if (id == null || _context.UsuariosClientes == null)
-        {
-            return NotFound();
-        }
-
-        var usuarioCliente = await _context.UsuariosClientes
-            .FirstOrDefaultAsync(m => m.Id == id);
-        if (usuarioCliente == null)
-        {
-            return NotFound();
-        }
-
-        return View(usuarioCliente);
-    }
-
-    // POST: UsuarioClientes/Delete/5
-    [HttpPost, ActionName("Delete")]
+    [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
@@ -205,7 +182,8 @@ public class UsuarioClientesController : Controller
         }
 
         await _context.SaveChangesAsync();
-        return RedirectToAction(nameof(Index));
+        await Logout();
+        return RedirectToAction("Index", "UsuarioDentistas");
     }
 
     private bool UsuarioClienteExists(int id)

@@ -1,7 +1,6 @@
 using EassyDental.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,9 +20,9 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     .AddCookie(options =>
     {
         options.AccessDeniedPath = "/UsuarioClientes/AccessDenied/";
-        options.LoginPath = "/UsuarioClientes/login/";
+        options.LoginPath = "/UsuarioClientes/Login/";
         options.AccessDeniedPath = "/UsuarioDentistas/AccessDenied/";
-        options.LoginPath = "/UsuarioDentistas/login/";
+        options.LoginPath = "/UsuarioDentistas/Login/";
     });
 
 
@@ -47,6 +46,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=UsuarioDentistas}/{action=Index}/{id?}");
 
 app.Run();

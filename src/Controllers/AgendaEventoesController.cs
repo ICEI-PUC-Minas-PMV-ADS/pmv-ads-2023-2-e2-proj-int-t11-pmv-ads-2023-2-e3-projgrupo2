@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using EassyDental.Models;
-using Microsoft.AspNetCore.Authorization;
+﻿using EassyDental.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+
+namespace EassyDental.Controllers;
 
 public class AgendaEventoesController : Controller
 {
@@ -16,14 +15,6 @@ public class AgendaEventoesController : Controller
         _context = context;
     }
 
-    // GET: AgendaEventoes
-    public async Task<IActionResult> Index()
-    {
-        var appDbContext = _context.AgendaEventos.Include(a => a.UsuarioCliente).Include(a => a.UsuarioDentista);
-        return View(await appDbContext.ToListAsync());
-    }
-
-    // GET: AgendaEventoes/Details/5
     public async Task<IActionResult> Details(int? id)
     {
         if (id == null || _context.AgendaEventos == null)
@@ -41,48 +32,39 @@ public class AgendaEventoesController : Controller
             return NotFound();
         }
 
-        // Verificação de autorização para detalhes
-        var clienteEmail = User.Identity.Name;
-        var dentistaEmail = User.Identity.Name;
-
-        if (User.IsInRole("Dentista") && agendaEvento.UsuarioDentista.Email != dentistaEmail)
-        {
-            return Forbid();
-        }
-
-        if (User.IsInRole("Cliente") && agendaEvento.UsuarioCliente.Email != clienteEmail)
-        {
-            return Forbid();
-        }
-
         return View(agendaEvento);
     }
 
-    // GET: AgendaEventoes/Create
-    public IActionResult Create()
+    #region Create
+    public async Task<IActionResult> Create()
     {
-        ViewData["UsuarioClienteId"] = new SelectList(_context.UsuariosClientes, "Id", "Name");
+        var clienteId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+        var cliente = await _context.UsuariosClientes.Where(c => c.Id.ToString() == clienteId).ToListAsync();
+        ViewData["UsuarioClienteId"] = new SelectList(cliente, "Id", "Name");
         ViewData["UsuarioDentistaId"] = new SelectList(_context.UsuariosDentistas, "Id", "Name");
         return View();
     }
 
-    // POST: AgendaEventoes/Create
     [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Id,DataHora,Titulo,Descricao,UsuarioClienteId,UsuarioDentistaId")] AgendaEvento agendaEvento)
+    public async Task<IActionResult> Create(AgendaEvento agendaEvento)
     {
         if (ModelState.IsValid)
         {
-            _context.Add(agendaEvento);
+            agendaEvento.Id = 0;
+            _context.AgendaEventos.Add(agendaEvento);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("IndexEventos", "UsuarioClientes", new { id = agendaEvento.UsuarioClienteId });
         }
-        ViewData["UsuarioClienteId"] = new SelectList(_context.UsuariosClientes, "Id", "Name", agendaEvento.UsuarioClienteId);
+        var clienteId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+        var cliente = await _context.UsuariosClientes.Where(c => c.Id.ToString() == clienteId).ToListAsync();
+        ViewData["UsuarioClienteId"] = new SelectList(cliente, "Id", "Name", agendaEvento.UsuarioClienteId);
         ViewData["UsuarioDentistaId"] = new SelectList(_context.UsuariosDentistas, "Id", "Name", agendaEvento.UsuarioDentistaId);
         return View(agendaEvento);
     }
+    #endregion
 
-    // GET: AgendaEventoes/Edit/5
+    #region Edit
+    [HttpGet]
     public async Task<IActionResult> Edit(int? id)
     {
         if (id == null || _context.AgendaEventos == null)
@@ -96,26 +78,78 @@ public class AgendaEventoesController : Controller
             return NotFound();
         }
 
-        // Verificação de autorização para edição
-        var clienteEmail = User.Identity.Name;
-        var dentistaEmail = User.Identity.Name;
-
-        if (User.IsInRole("Dentista") && agendaEvento.UsuarioDentista.Email != dentistaEmail)
-        {
-            return Forbid();
-        }
-
-        if (User.IsInRole("Cliente") && agendaEvento.UsuarioCliente.Email != clienteEmail)
-        {
-            return Forbid();
-        }
-
-        ViewData["UsuarioClienteId"] = new SelectList(_context.UsuariosClientes, "Id", "Name", agendaEvento.UsuarioClienteId);
+        var clienteId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+        var cliente = await _context.UsuariosClientes.Where(c => c.Id.ToString() == clienteId).ToListAsync();
+        ViewData["UsuarioClienteId"] = new SelectList(cliente, "Id", "Name", agendaEvento.UsuarioClienteId);
         ViewData["UsuarioDentistaId"] = new SelectList(_context.UsuariosDentistas, "Id", "Name", agendaEvento.UsuarioDentistaId);
         return View(agendaEvento);
     }
 
-    // ... outros métodos ...
+    [HttpPut]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(int id, AgendaEvento agendaEvento)
+    {
+        if (id != agendaEvento.Id)
+        {
+            return NotFound();
+        }
+
+        if (ModelState.IsValid)
+        {
+            try
+            {
+                _context.Update(agendaEvento);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!AgendaEventoExists(agendaEvento.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            if (User.IsInRole("Dentista"))
+            {
+                return RedirectToAction("IndexEventos", "UsuarioDentistas");
+            }
+            else
+            {
+                return RedirectToAction("IndexEventos", "UsuarioClientes");
+            }
+        }
+        return View(agendaEvento);
+    }
+    #endregion
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        if (_context.AgendaEventos == null)
+        {
+            return Problem("Entity set 'AppDbContext.AgendaEventos'  is null.");
+        }
+        var agendaEventos = await _context.AgendaEventos.FindAsync(id);
+        if (agendaEventos != null)
+        {
+            _context.AgendaEventos.Remove(agendaEventos);
+        }
+
+        await _context.SaveChangesAsync();
+
+        if (User.IsInRole("Dentista"))
+        {
+            return RedirectToAction("IndexEventos", "UsuarioDentistas", new { id = User.FindFirst(ClaimTypes.NameIdentifier).Value });
+        }
+        else
+        {
+            return RedirectToAction("IndexEventos", "UsuarioClientes", new { id = User.FindFirst(ClaimTypes.NameIdentifier).Value });
+        }
+    }
 
     private bool AgendaEventoExists(int id)
     {

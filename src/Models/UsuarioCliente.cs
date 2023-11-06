@@ -1,6 +1,4 @@
-﻿using EassyDental.Models;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EassyDental.Models;
@@ -11,7 +9,7 @@ public class UsuarioCliente
     [Key]
     public int Id { get; set; }
 
-    [Required(ErrorMessage = "Obrigatório informar o nome")]
+    [Required(ErrorMessage = "Obrigatório informar o Nome")]
     public string Name { get; set; }
 
     [Required(ErrorMessage = "Obrigatório informar o Telefone")]
@@ -21,8 +19,8 @@ public class UsuarioCliente
     public string Email { get; set; }
 
     [Required(ErrorMessage = "Obrigatório informar a Senha")]
+    [DataType(DataType.Password)]
     public string Senha { get; set; }
 
-    // Propriedade de navegação para AgendaEventos
     public ICollection<AgendaEvento> AgendaEventos { get; set; }
 }

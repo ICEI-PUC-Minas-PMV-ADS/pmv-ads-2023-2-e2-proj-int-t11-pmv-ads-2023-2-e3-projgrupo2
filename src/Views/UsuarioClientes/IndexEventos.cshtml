@@ -1,0 +1,36 @@
+﻿@model IEnumerable<EassyDental.Models.AgendaEvento>
+
+@{
+    ViewData["Title"] = "IndexEventos";
+}
+
+<h1>Consultas Marcadas Cliente</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HorarioConsulta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsuarioDentista)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioConsulta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsuarioDentista.Name)
+            </td>
+            <td>
+                <a asp-action="Details" asp-controller="AgendaEventoes" asp-route-id="@item.Id">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

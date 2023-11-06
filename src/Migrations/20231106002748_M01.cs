@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EassyDental.Migrations
 {
-    public partial class N01 : Migration
+    public partial class M01 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -34,14 +34,13 @@ namespace EassyDental.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Telefone = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CRO = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Especialidade = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Nome_da_clinica = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Endereço = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FotoFileName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    HorarioAtendimentoInicio = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    HorarioAtendimentoFim = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    CRO = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Especialidade = table.Column<int>(type: "int", nullable: false),
+                    NomeClinica = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Endereco = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    HorarioAbertura = table.Column<TimeSpan>(type: "time", nullable: false),
+                    HorarioEncerramento = table.Column<TimeSpan>(type: "time", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -49,28 +48,26 @@ namespace EassyDental.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AgendaEventos",
+                name: "AgendaEvento",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    DataHora = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    HorarioConsulta = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UsuarioClienteId = table.Column<int>(type: "int", nullable: false),
                     UsuarioDentistaId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AgendaEventos", x => x.Id);
+                    table.PrimaryKey("PK_AgendaEvento", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_AgendaEventos_UsuarioCliente_UsuarioClienteId",
+                        name: "FK_AgendaEvento_UsuarioCliente_UsuarioClienteId",
                         column: x => x.UsuarioClienteId,
                         principalTable: "UsuarioCliente",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_AgendaEventos_UsuarioDentista_UsuarioDentistaId",
+                        name: "FK_AgendaEvento_UsuarioDentista_UsuarioDentistaId",
                         column: x => x.UsuarioDentistaId,
                         principalTable: "UsuarioDentista",
                         principalColumn: "Id",
@@ -78,20 +75,20 @@ namespace EassyDental.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_AgendaEventos_UsuarioClienteId",
-                table: "AgendaEventos",
+                name: "IX_AgendaEvento_UsuarioClienteId",
+                table: "AgendaEvento",
                 column: "UsuarioClienteId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AgendaEventos_UsuarioDentistaId",
-                table: "AgendaEventos",
+                name: "IX_AgendaEvento_UsuarioDentistaId",
+                table: "AgendaEvento",
                 column: "UsuarioDentistaId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "AgendaEventos");
+                name: "AgendaEvento");
 
             migrationBuilder.DropTable(
                 name: "UsuarioCliente");
