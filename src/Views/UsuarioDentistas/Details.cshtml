@@ -4,68 +4,71 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-7 col-sm-12 border rounded-3 p-4">
+            <h1 class="text-black">
+                @Html.DisplayFor(model => model.NomeClinica)
+            </h1>
+            <div class="row text-secondary fs-5">
+                <div class="col-auto">
+                    @Html.DisplayFor(model => model.HorarioAbertura) - @Html.DisplayFor(model => model.HorarioEncerramento)
+                </div>
+                <div class="col-auto border-start border-2">
+                    @Html.DisplayFor(model => model.Endereco)
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-7">
+                    <div class="row">
+                        <h3 class="text-black">
+                            @Html.DisplayFor(model => model.Name)
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div class="row text-secondary">
+                            <div class="col-auto">
+                                @Html.DisplayFor(model => model.CRO)
+                            </div>
+                            <div class="col-auto border-start border-2">
+                                @Html.DisplayFor(model => model.Especialidade)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 text-secondary align-self-end">
+                    <div class="row mb-2">
+                        telefone: @Html.DisplayFor(model => model.Telefone)
+                    </div>
+                    <div class="row">
+                        e-mail: @Html.DisplayFor(model => model.Email)
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a asp-action="Index" class="btn btn-sm btn-outline-secondary">Retornar</a>
+            </div>
+        </div>
+        @if (User.IsInRole("Cliente"))
+        {
+            <form class="col-md-3 col-sm-12 border rounded-3 mb-5 p-4 align-self-center" id="formAgendar" method="post" action="@Url.Action("CreateEventos", "UsuarioDentistas")">
+                <div class="mb-4 fs-1 fw-bold">Agendamento</div>
+                <input type="hidden" name="id" value="@Model.Id" />
 
-<div>
-    <h4>UsuarioDentista</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Telefone)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Telefone)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CRO)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CRO)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Especialidade)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Especialidade)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NomeClinica)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NomeClinica)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Endereco)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Endereco)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.HorarioAbertura)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.HorarioAbertura)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.HorarioEncerramento)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.HorarioEncerramento)
-        </dd>
-    </dl>
+                <label for="horarioConsulta" class="h4 text-secondary">Escolha o horário:</label>
+                <input class="mb-2" type="datetime-local" id="horarioConsulta" name="horarioConsulta" required />
+
+                <div class="row">
+                    <button class="btn btn-primary" type="button" onclick="agendar()">Agendar</button>
+                </div>
+            </form>
+        }
+    </div>
 </div>
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
+<script>
+    function agendar() {
+        var form = document.getElementById("formAgendar");
+        form.submit();
+    }
+</script>

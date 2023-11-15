@@ -92,6 +92,22 @@ public class UsuarioDentistasController : Controller
         return View(await _context.UsuariosDentistas.ToListAsync());
     }
 
+    [HttpPost]
+    public async Task<IActionResult> CreateEventos(int id, DateTime horarioConsulta)
+    {
+        AgendaEvento agendaEvento = new()
+        {
+            Id = 0,
+            HorarioConsulta = horarioConsulta,
+            UsuarioClienteId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value),
+            UsuarioDentistaId = id
+        };
+
+        _context.AgendaEventos.Add(agendaEvento);
+        await _context.SaveChangesAsync();
+        return RedirectToAction("IndexEventos", "UsuarioClientes", new { id = agendaEvento.UsuarioClienteId });
+    }
+
     [HttpGet]
     public async Task<IActionResult> IndexEventos(int id)
     {
@@ -137,7 +153,7 @@ public class UsuarioDentistasController : Controller
         return View(usuarioDentista);
     }
 
-    [HttpPut]
+    [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(int id, UsuarioDentista usuarioDentista)
     {

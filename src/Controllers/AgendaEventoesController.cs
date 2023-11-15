@@ -35,34 +35,6 @@ public class AgendaEventoesController : Controller
         return View(agendaEvento);
     }
 
-    #region Create
-    public async Task<IActionResult> Create()
-    {
-        var clienteId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
-        var cliente = await _context.UsuariosClientes.Where(c => c.Id.ToString() == clienteId).ToListAsync();
-        ViewData["UsuarioClienteId"] = new SelectList(cliente, "Id", "Name");
-        ViewData["UsuarioDentistaId"] = new SelectList(_context.UsuariosDentistas, "Id", "Name");
-        return View();
-    }
-
-    [HttpPost]
-    public async Task<IActionResult> Create(AgendaEvento agendaEvento)
-    {
-        if (ModelState.IsValid)
-        {
-            agendaEvento.Id = 0;
-            _context.AgendaEventos.Add(agendaEvento);
-            await _context.SaveChangesAsync();
-            return RedirectToAction("IndexEventos", "UsuarioClientes", new { id = agendaEvento.UsuarioClienteId });
-        }
-        var clienteId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
-        var cliente = await _context.UsuariosClientes.Where(c => c.Id.ToString() == clienteId).ToListAsync();
-        ViewData["UsuarioClienteId"] = new SelectList(cliente, "Id", "Name", agendaEvento.UsuarioClienteId);
-        ViewData["UsuarioDentistaId"] = new SelectList(_context.UsuariosDentistas, "Id", "Name", agendaEvento.UsuarioDentistaId);
-        return View(agendaEvento);
-    }
-    #endregion
-
     #region Edit
     [HttpGet]
     public async Task<IActionResult> Edit(int? id)
@@ -85,7 +57,7 @@ public class AgendaEventoesController : Controller
         return View(agendaEvento);
     }
 
-    [HttpPut]
+    [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(int id, AgendaEvento agendaEvento)
     {
@@ -112,13 +84,14 @@ public class AgendaEventoesController : Controller
                     throw;
                 }
             }
+
             if (User.IsInRole("Dentista"))
             {
-                return RedirectToAction("IndexEventos", "UsuarioDentistas");
+                return RedirectToAction("IndexEventos", "UsuarioDentistas", new { id = User.FindFirst(ClaimTypes.NameIdentifier).Value });
             }
             else
             {
-                return RedirectToAction("IndexEventos", "UsuarioClientes");
+                return RedirectToAction("IndexEventos", "UsuarioClientes", new { id = User.FindFirst(ClaimTypes.NameIdentifier).Value });
             }
         }
         return View(agendaEvento);

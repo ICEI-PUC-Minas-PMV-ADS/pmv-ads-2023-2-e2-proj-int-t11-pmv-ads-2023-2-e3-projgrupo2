@@ -133,7 +133,7 @@ public class UsuarioClientesController : Controller
         return View(usuariosClientes);
     }
 
-    [HttpPut]
+    [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(int id, UsuarioCliente usuarioCliente)
     {

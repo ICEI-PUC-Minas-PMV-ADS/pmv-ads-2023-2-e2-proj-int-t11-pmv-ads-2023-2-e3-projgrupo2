@@ -10,8 +10,7 @@
         <link rel="stylesheet" href="~/Eassydentalmvc.styles.css" asp-append-version="true" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     </head>
-
-    <body>
+    <body class="h-100 d-flex justify-content-between flex-column">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
@@ -53,9 +52,6 @@
                                 <a class="nav-link" asp-controller="UsuarioClientes" asp-action="Details" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value">Perfil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="AgendaEventoes" asp-action="Create" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value">Agendar Consultas</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" asp-controller="UsuarioClientes" asp-action="IndexEventos" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value">Suas Consultas</a>
                             </li>
                             <li class="nav-item">
@@ -67,65 +63,59 @@
                 </div>
             </nav>
         </header>
-        
-        <div class="container">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
+        <main class="h-100 p-5" role="main">
+            @RenderBody()
+        </main>
+        <footer class="text-center" style="background-color: #379bbf;">
+            <div class="container pt-4">
+                <section class="mb-4">
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon facebook-icon"
+                        href="#!"
+                        role="button"
+                        data-mdb-ripple-color="dark">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon twitter-icon"
+                        href="#!"
+                        role="button"
+                        data-mdb-ripple-color="dark">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon google-icon"
+                        href="#!"
+                        role="button"
+                        data-mdb-ripple-color="dark">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon instagram-icon"
+                        href="#!"
+                        role="button"
+                        data-mdb-ripple-color="dark">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon linkedin-icon"
+                        href="#!"
+                        role="button"
+                        data-mdb-ripple-color="dark">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon github-icon"
+                        href="#!"
+                        role="button"
+                        data-mdb-ripple-color="dark">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </section>
+            </div>
 
-        <div class="container my-5">
-            <footer class="text-center" style="background-color: #379bbf;">
-                <div class="container pt-4">
-                    <section class="mb-4">
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon facebook-icon"
-                           href="#!"
-                           role="button"
-                           data-mdb-ripple-color="dark">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon twitter-icon"
-                           href="#!"
-                           role="button"
-                           data-mdb-ripple-color="dark">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon google-icon"
-                           href="#!"
-                           role="button"
-                           data-mdb-ripple-color="dark">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon instagram-icon"
-                           href="#!"
-                           role="button"
-                           data-mdb-ripple-color="dark">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon linkedin-icon"
-                           href="#!"
-                           role="button"
-                           data-mdb-ripple-color="dark">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 social-icon github-icon"
-                           href="#!"
-                           role="button"
-                           data-mdb-ripple-color="dark">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </section>
-                </div>
-
-                <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    © 2020 Copyright: <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-                </div>
-            </footer>
-        </div>
-
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-        @await RenderSectionAsync("Scripts", required: false)
+            <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright: <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+        </footer>
     </body>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </html>
