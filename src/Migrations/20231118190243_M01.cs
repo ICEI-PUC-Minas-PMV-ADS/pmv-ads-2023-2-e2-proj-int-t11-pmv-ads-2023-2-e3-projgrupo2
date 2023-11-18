@@ -40,7 +40,8 @@ namespace EassyDental.Migrations
                     NomeClinica = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Endereco = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HorarioAbertura = table.Column<TimeSpan>(type: "time", nullable: false),
-                    HorarioEncerramento = table.Column<TimeSpan>(type: "time", nullable: false)
+                    HorarioEncerramento = table.Column<TimeSpan>(type: "time", nullable: false),
+                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

@@ -40,6 +40,8 @@ public class UsuarioDentista
     [Required(ErrorMessage = "Obrigatório informar o Horario de Encerramento")]
     public TimeSpan HorarioEncerramento { get; set; }
 
+    public string Descricao { get; set; }
+
     public ICollection<AgendaEvento> AgendaEventos { get; set; }
 }
 

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EassyDental.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231106002748_M01")]
+    [Migration("20231118190243_M01")]
     partial class M01
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -89,6 +89,9 @@ namespace EassyDental.Migrations
 
                     b.Property<string>("CRO")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")

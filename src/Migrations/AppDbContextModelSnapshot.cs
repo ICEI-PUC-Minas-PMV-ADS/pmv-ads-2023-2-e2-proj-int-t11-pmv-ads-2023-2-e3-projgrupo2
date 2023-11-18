@@ -89,6 +89,9 @@ namespace EassyDental.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

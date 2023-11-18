@@ -11,28 +11,69 @@
     <h4>AgendaEvento</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class = "col-4">
             @Html.DisplayNameFor(model => model.HorarioConsulta)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-8">
             @Html.DisplayFor(model => model.HorarioConsulta)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UsuarioCliente)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UsuarioCliente.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UsuarioDentista)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UsuarioDentista.Name)
-        </dd>
+        @if (User.IsInRole("Dentista"))
+        {
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.UsuarioCliente.Name)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.UsuarioCliente.Name)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.UsuarioCliente.Telefone)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.UsuarioCliente.Telefone)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.UsuarioCliente.Email)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.UsuarioCliente.Email)
+            </dd>
+        }
+        @if (User.IsInRole("Cliente"))
+        {
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.UsuarioDentista.Name)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.UsuarioDentista.Name)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.UsuarioDentista.Telefone)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.UsuarioDentista.Telefone)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.UsuarioDentista.Email)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.UsuarioDentista.Email)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.UsuarioDentista.NomeClinica)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.UsuarioDentista.NomeClinica)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.UsuarioDentista.Endereco)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.UsuarioDentista.Endereco)
+            </dd>
+        }
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     @if (User.IsInRole("Dentista"))
     {
         <a asp-action="IndexEventos" asp-controller="UsuarioDentistas" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value">Back to List</a>

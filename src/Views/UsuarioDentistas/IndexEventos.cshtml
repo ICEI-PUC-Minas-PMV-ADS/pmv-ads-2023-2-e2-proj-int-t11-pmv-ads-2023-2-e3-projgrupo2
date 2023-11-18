@@ -27,8 +27,16 @@
             <td>
                 @Html.DisplayFor(modelItem => item.UsuarioCliente.Name)
             </td>
-            <td>
-                <a asp-action="Details" asp-controller="AgendaEventoes" asp-route-id="@item.Id">Details</a>
+            <td class="d-flex">
+                <form asp-action="Details" asp-controller="AgendaEventoes" asp-route-id="@item.Id" class="me-1">
+                    <input type="submit" value="Detalhes" class="btn btn-primary" />
+                </form>
+                <form asp-action="Edit" asp-controller="AgendaEventoes" asp-route-id="@item.Id" method="get" class="me-1">
+                    <input type="submit" value="Editar" class="btn btn-secondary" />
+                </form>
+                <form asp-action="DeleteConfirmed" asp-controller="AgendaEventoes" asp-route-id="@item.Id" method="post">
+                    <input type="submit" value="Deletar" class="btn btn-danger" />
+                </form>
             </td>
         </tr>
 }
