@@ -33,3 +33,13 @@ Acesse o site https://eassydental.azurewebsites.net/
 ![Passo 2](img/testes/C03Passo2.png)
 ![Passo 3](img/testes/C03Passo3.png)
 ![Passo 4](img/testes/C03Passo4.png)
+
+# Agendamento de Consultas: 
+
+* Objetivo: Testar o processo de agendamento de consultas.
+
+![Passo 1](img/testes/C06Passo1.png)
+![Passo 2](img/testes/C06Passo2.png)
+![Passo 3](img/testes/C06Passo3.png)
+![Passo 4](img/testes/C06Passo4.png)
+![Passo 5](img/testes/C06Passo5.png)
