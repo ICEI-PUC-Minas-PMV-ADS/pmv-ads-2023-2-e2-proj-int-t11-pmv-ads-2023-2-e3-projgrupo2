@@ -1,14 +1,10 @@
 # Registro de Testes de Software
 
+Os resultados obtidos nos testes de software realizados são descritos abaixo.
+
 Instruções de acesso 
 
 Acesse o site https://eassydental.azurewebsites.net/
-
-* Registro de Testes de Software 
-
-Os resultados obtidos nos testes de software realizados são descritos abaixo. 
-
-
 
 # CT-01 – Cadastrar Cliente 
 

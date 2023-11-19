@@ -1,6 +1,5 @@
 # Plano de Testes de Usabilidade
 
-
  Os testes de usabilidade a serem realizados no aplicativo são descritos a seguir: 
 
  
@@ -31,17 +30,7 @@
 
 * Público: Usuários finais (Clientes e Dentistas). 
 
-* Tarefa: Usuários devem fazer login com sucesso usando e-mail e senha correspondentes. Avaliar a facilidade de login e a precisão do feedback de autenticação. 
-
- 
-
-# Pesquisa e Filtro de Dentistas: 
-
-* Objetivo: Avaliar a capacidade dos usuários de encontrar dentistas de acordo com suas preferências. 
-
-* Público: Usuários finais (Clientes e Dentistas). 
-
-* Tarefa: Usuários devem pesquisar e filtrar a lista de dentistas por nome, especialidade e localidade. Avaliar a facilidade de uso e a precisão dos resultados. 
+* Tarefa: Usuários devem fazer login com sucesso usando e-mail e senha correspondentes. Avaliar a facilidade de login e a precisão do feedback de autenticação.
 
  
 
