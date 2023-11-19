@@ -50,38 +50,38 @@ RF-04
 
 Acesse o site https://eassydental.azurewebsites.net/ e clique no botão de login
 
+* Visualizar lista de Dentistas (RF-05) 
 
-* Pesquisa de Notícias (RNF-01 RNF-03) 
+Na tela a seguir os usuários são capazes de visualizar a lista de dentistas
 
-A Tela Home já se encontra responsiva e segue um padrao de designer. 
-
- 
-![Pagina Home](img/pghome.png)
- 
+![Pagina Lista Dentista](img/TelaListaDentista.png)
 
 * Requisitos atendidos 
 
-RNF-01 -  
-
-RNF-02 -  
-
- 
+RF-05
 
 * Artefatos da funcionalidade 
 
-Index.html 
-
- 
-
- 
-
-Instruções de acesso 
+/UsuarioDentistas/Index
 
 * Instruções de acesso 
 
-Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub; 
+Acesse o site https://eassydental.azurewebsites.net/ e será redirecionado diretamente na lista de dentistas
 
-Descompacte o arquivo em uma pasta específica; 
+* Visualizar detalhes do Dentista (RF-06) 
 
-Abra o Visual Studio Code e execute o Live Server;
-Abra um navegador de Internet e informe a seguinte URL:  https://localhost:7162/
+Na tela a seguir os usuários são capazes de visualizar os detalhes do dentista
+
+![Pagina Detalhes Dentista](img/TelaDetalheDentista.png)
+
+* Requisitos atendidos 
+
+RF-06
+
+* Artefatos da funcionalidade 
+
+/UsuarioDentistas/Details/{id}
+
+* Instruções de acesso 
+
+Acesse o site https://eassydental.azurewebsites.net/ e escolha um dentista da lista de dentistas
