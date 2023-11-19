@@ -13,27 +13,25 @@ O template criado está disponível no site https://www.figma.com/file/j8f1c93Od
 
 * A responsividade segue o padrão do Bootstrap 
 
-* Tela Home 
-
 * Tela Agendar  
 
 È possivel visualizar as datas e horarios  disponiveis. Somente se o paciente ou dentista tiver o cadastro 
 
-![Imagem 11 Tela Agendamento](img/Tela%20Agendamento.png)
+![Imagem 11 Tela Agendamento](img/TelaDetalheDentista.png)
 
 * Tela Dentistas  
 
 Local aonde os pacientes poderam ver os dentistas cadastrados 
 
-![Imagem 06 Tela Dentista](img/Tela%20Agendar.png)
+![Imagem 06 Tela Dentista](img/TelaListaDentista.png)
 
 * Tela Login Paciente 
 
-È possivel o paciente fazer o cadastro  
+É possivel o paciente fazer o cadastro  
 ![Imagem 09 Tela Cadastro Paciente](img/Tela%20Cadastro%20Paciente.png)
 * Tela Login Dentista 
 
-È possivel o Dentista fazer o cadastro  
+É possivel o Dentista fazer o cadastro  
 
 ![Imagem 10 Tela Cadastro Dentista](img/Tela%20Cadastro%20Dentista.png)
 
@@ -41,4 +39,3 @@ Tela Entrar
 
 È possivel entrar no sistema
 ![Imagem 08 Tela Login](img/Tela%20Login.png)
-
