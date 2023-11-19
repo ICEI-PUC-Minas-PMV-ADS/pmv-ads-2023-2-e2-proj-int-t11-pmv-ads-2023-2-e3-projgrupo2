@@ -13,19 +13,6 @@ O diagrama de fluxo é uma representação que estuda a interação do usuário 
 
 ## Wireframe Interativo 
 
-Conforme o diagrama de fluxo do projeto, apresentado no item anterior, as telas do sistema são apresentadas em detalhes nos itens que se seguem. Para visualizar o wireframe interativo, acesse o  
-
-
-As telas do sistema apresentam uma estrutura comum que é apresentada na Figura 4. Nesta estrutura, será distribuída em 2 blocos menores, e 1 grande bloco, descritos a seguir. São eles: 
-
-Header - local onde são dispostos elementos fixos de identidade (logo) e navegação principal do site (menu da aplicação); 
-
-Body - apresenta o conteúdo da tela em questão; 
-
-Footer - apresenta os elementos de navegação secundária, geralmente associados aos elementos do bloco de conteúdo. 
-
-![Imagem 05 Tela Lista de Dentistas](img/TelaListaDentista.png)
-
 Tela Dentista
 
 Nessa parte será possível visualizar os dentistas cadastrados, e visualizar suas especialidades, será possível através de uma barra lateral filtrar por localidade e especialidade. Para acessar mais informações do dentista ele irá para a próxima tela a seguir.   
