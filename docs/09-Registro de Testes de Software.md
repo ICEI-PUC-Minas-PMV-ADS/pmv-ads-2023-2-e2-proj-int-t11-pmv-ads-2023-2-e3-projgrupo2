@@ -132,17 +132,17 @@ Acesse o site https://eassydental.azurewebsites.net/
 * Passos:  
 
 1 Acessar o Site 
-![Passo 1](img/testes/C03Passo1.png)
+![Passo 1](img/testes/C07Passo1.png)
 
 2 Fazer login como cliente
-![Passo 2](img/testes/C03Passo1.png)
+![Passo 2](img/testes/C07Passo2.png)
 
-2 Acessar a página de consultas
-![Passo 3](img/testes/C03Passo3.png)
+3 Acessar a página de consultas
+![Passo 3](img/testes/C07Passo3.png)
 
 * Critérios de Êxito:
 
-![Êxito](img/testes/C03Exito.png)
+![Êxito](img/testes/C07Exito.png)
 
 
 
@@ -151,14 +151,15 @@ Acesse o site https://eassydental.azurewebsites.net/
 * Passos:  
 
 1 Acessar o Site 
-![Passo 1](img/testes/C03Passo1.png)
+![Passo 1](img/testes/C08Passo1.png)
 
 2 Fazer login como dentista
-![Passo 2](img/testes/C03Passo1.png)
+![Passo 2.1](img/testes/C08Passo2.1.png)
+![Passo 2.2](img/testes/C08Passo2.2.png)
 
-2 Acessar a página de consultas
-![Passo 3](img/testes/C03Passo3.png)
+3 Acessar a página de consultas
+![Passo 3](img/testes/C08Passo3.png)
 
 * Critérios de Êxito:
 
-![Êxito](img/testes/C03Exito.png)
+![Êxito](img/testes/C08Exito.png)
