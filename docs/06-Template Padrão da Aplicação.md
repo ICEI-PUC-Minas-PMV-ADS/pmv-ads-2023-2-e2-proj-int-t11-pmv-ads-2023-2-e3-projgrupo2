@@ -15,7 +15,7 @@ O template criado está disponível no site https://www.figma.com/file/j8f1c93Od
 
 * Tela Agendar  
 
-È possivel visualizar as datas e horarios  disponiveis. Somente se o paciente ou dentista tiver o cadastro 
+É possivel visualizar as datas e horarios  disponiveis. Somente se o paciente ou dentista tiver o cadastro 
 
 ![Imagem 11 Tela Agendamento](img/TelaDetalheDentista.png)
 
@@ -28,14 +28,14 @@ Local aonde os pacientes poderam ver os dentistas cadastrados
 * Tela Login Paciente 
 
 É possivel o paciente fazer o cadastro  
-![Imagem 09 Tela Cadastro Paciente](img/Tela%20Cadastro%20Paciente.png)
+![Imagem 09 Tela Cadastro Paciente](img/TelaCadastroCliente.png)
 * Tela Login Dentista 
 
 É possivel o Dentista fazer o cadastro  
 
-![Imagem 10 Tela Cadastro Dentista](img/Tela%20Cadastro%20Dentista.png)
+![Imagem 10 Tela Cadastro Dentista](img/TelaCadastroDentista.png)
 
 Tela Entrar 
 
 È possivel entrar no sistema
-![Imagem 08 Tela Login](img/Tela%20Login.png)
+![Imagem 08 Tela Login](img/TelaLogin.png)
