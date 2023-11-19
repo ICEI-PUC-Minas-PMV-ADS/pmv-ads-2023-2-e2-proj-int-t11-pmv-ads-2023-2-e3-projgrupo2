@@ -26,12 +26,6 @@ Footer - apresenta os elementos de navegação secundária, geralmente associado
 
 ![Imagem 05 Tela Home](img/Tela%20Home.png)
 
-Tela - Home-Page 
-
-A tela de home-page mostra informações de como funcionaria o sistema e sendo possível começar a navegação. As imagens serão atrativas para captar a atenção do nosso público alvo.  
-
-![Imagem 05 Tela Home](img/Tela%20Home.png)
-
 Tela Dentista
 
 Nessa parte será possível visualizar os dentistas cadastrados, e visualizar suas especialidades, será possível através de uma barra lateral filtrar por localidade e especialidade. Para acessar mais informações do dentista ele irá para a próxima tela a seguir.   
