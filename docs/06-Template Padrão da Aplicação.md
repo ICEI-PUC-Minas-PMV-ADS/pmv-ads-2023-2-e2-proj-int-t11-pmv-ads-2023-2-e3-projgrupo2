@@ -4,7 +4,7 @@ Template do Site
 
 O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente, conforme Figura 05. 
 
-![Imagem 05 Tela Home](img/Tela%20Home.png)
+![Imagem 05 Tela Home](img/TelaListaDentista.png)
 
 O template criado está disponível no site https://www.figma.com/file/j8f1c93Odr0cVKPrZHeUSz/Projeto-Final?node-id=0%3A1&t=blsZrlSYQwIUruCI-1. e é composto pelos seguintes layouts:  
 
