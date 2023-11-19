@@ -8,15 +8,12 @@ O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de
 
 O template criado está disponível no site https://www.figma.com/file/j8f1c93Odr0cVKPrZHeUSz/Projeto-Final?node-id=0%3A1&t=blsZrlSYQwIUruCI-1. e é composto pelos seguintes layouts:  
 
-* Menu principal 
 
 * Tela principal 
 
 * A responsividade segue o padrão do Bootstrap 
 
 * Tela Home 
-
-
 
 * Tela Agendar  
 
