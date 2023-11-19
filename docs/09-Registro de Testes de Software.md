@@ -22,7 +22,8 @@ Acesse o site https://eassydental.azurewebsites.net/
 4 Clicar em confirmar cadastro
 ![Passo 4](img/testes/C01Passo4.png)
 
-* Critérios de Êxito: 
+* Critérios de Êxito:
+
 ![Êxito](img/testes/C01Exito.png)
 
 
@@ -44,7 +45,8 @@ Acesse o site https://eassydental.azurewebsites.net/
 4 Clicar em confirmar cadastro
 ![Passo 4](img/testes/C02Passo4.png)
 
-* Critérios de Êxito: 
+* Critérios de Êxito:
+
 ![Êxito](img/testes/C02Exito.png)
 
 
@@ -65,17 +67,98 @@ Acesse o site https://eassydental.azurewebsites.net/
 4 Clicar em fazer login
 ![Passo 4](img/testes/C03Passo4.png)
 
-* Critérios de Êxito: 
+* Critérios de Êxito:
+
 ![Êxito](img/testes/C03Exito.png)
 
 
 
-# CT-04 – Visualizar lista de dentistas 
+# CT-04 – Visualizar lista de dentistas
 
 * Passos:  
 
 1 Acessar o Site
 ![Passo 1](img/TelaListaDentista.png)
 
-* Critérios de Êxito: 
+* Critérios de Êxito:
+
 ![Êxito](img/TelaListaDentista.png)
+
+
+
+# CT-05 – Visualizar detalhes de um dentista 
+
+* Passos:
+
+1 Acessar o Site
+![Passo 1](img/testes/C05Passo1.png)
+
+2 Selecionar dentista
+![Passo 2](img/testes/C05Passo2.png)
+
+* Critérios de Êxito:
+
+![Êxito](img/testes/C05Exito.png)
+
+
+
+# CT-06 – Agendar horário com um dentista
+
+* Passos:  
+
+1 Acessar o Site
+![Passo 1](img/testes/C03Passo1.png)
+
+2 Fazer login como cliente
+![Passo 1](img/testes/C03Passo1.png)
+
+3 Selecionar dentista
+![Passo 2](img/testes/C03Passo2.png)
+
+4 Preencher o dia e a hora
+![Passo 3](img/testes/C03Passo3.png)
+
+5 Clicar em agendar
+![Passo 4](img/testes/C03Passo4.png)
+
+* Critérios de Êxito:
+
+![Êxito](img/testes/C03Exito.png)
+
+
+
+# CT-07 – Visualizar horários marcados como cliente
+
+* Passos:  
+
+1 Acessar o Site 
+![Passo 1](img/testes/C03Passo1.png)
+
+2 Fazer login como cliente
+![Passo 1](img/testes/C03Passo1.png)
+
+2 Acessar a página de consultas
+![Passo 3](img/testes/C03Passo3.png)
+
+* Critérios de Êxito:
+
+![Êxito](img/testes/C03Exito.png)
+
+
+
+# CT-08 – Visualizar horários marcados pelos clientes
+
+* Passos:  
+
+1 Acessar o Site 
+![Passo 1](img/testes/C03Passo1.png)
+
+2 Fazer login como dentista
+![Passo 1](img/testes/C03Passo1.png)
+
+2 Acessar a página de consultas
+![Passo 3](img/testes/C03Passo3.png)
+
+* Critérios de Êxito:
+
+![Êxito](img/testes/C03Exito.png)

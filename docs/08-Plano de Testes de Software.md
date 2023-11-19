@@ -118,36 +118,10 @@ Verificar se está sendo possível visualizar lista de dentistas
 
 * Critérios de Êxito 
 
-Site deve exibir todos os dentistas disponíveis  
-
- 
-
-# CT-05 – Filtrar lista de dentistas 
-
-* Requisitos Associados:  
-
-RF-06 - O usuário (cliente ou dentista) deve ser capaz de filtrar a lista de dentistas por nome ou especialidade ou localidade. 
-
-* Objetivo do Teste:  
-
-Verificar se está sendo possível filtrar a lista de dentistas 
-
-Passos 
-
-1 Acessar o Navegador:  
-
-2 Informar o endereço do Site 
-
-3 Acessar página com a lista de dentistas 
-
-4 Filtrar por um tipo de especialidade 
-
-* Critérios de Êxito:  
-
-Site deve exibir os dentistas que se encaixem no filtro 
+Site deve exibir todos os dentistas disponíveis
 
 
-# CT-06 – Visualizar detalhes de um dentista 
+# CT-05 – Visualizar detalhes de um dentista 
 
 * Requisitos Associados:  
 
@@ -173,7 +147,7 @@ Site deve exibir os detalhes de um dentista
 
 
 
-# CT-07 – Agendar horário com um dentista 
+# CT-06 – Agendar horário com um dentista 
 
 * Requisitos Associados:  
 
@@ -197,70 +171,11 @@ Verificar se está sendo possível agendar um horário com um dentista
 
 * Critérios de Êxito:  
 
-Site deve confirmar o agendamento 
-
-
-# CT-08 – Agendar horário previamente agendado 
-
-* Requisitos Associados:  
-
-RF-09 - O cliente, quando logado, não deve poder agendar o mesmo horário que já foi agendado previamente. 
-
-* Objetivo do Teste:  
-
-Verificar se não está sendo possível agendar um horário previamente agendado 
-
-* Passos:  
-
-1 Acessar o Navegador 
-
-2 Informar o endereço do Site 
-
-3 Acessar página com a lista de dentistas 
-
-4 Selecione um dentista 
-
-5 Agende um horário previamente agendado 
-
-* Critérios de Êxito:  
-
-Site deve informar que não foi possível o agendamento, por conta de um agendamento prévio  
-
-
-
-# CT-09 – Agendar o mesmo horário com mais de um dentista 
-
-* Requisitos Associados:  
-
-RF-10 - O cliente, quando logado, não deve poder agendar o mesmo horário com mais de um dentista. 
-
-* Objetivo do Teste:  
-
-Verificar se não está sendo possível agendar um horário o mesmo horário duas vezes 
-
-* Passos:  
-
-1 Acessar o Navegador 
-
-2 Informar o endereço do Site 
-
-3 Acessar página com a lista de dentistas 
-
-4 Selecione um dentista 
-
-5 Agende um horário 
-
-6 Selecione outro dentista 
-
-7 Agende o mesmo horário 
-
-* Critérios de Êxito:  
-
-Site deve informar que não foi possível o agendamento, por já existir um agendamento no mesmo horário 
+Site deve confirmar o agendamento
 
  
 
-# CT-10 – Visualizar horários marcados como cliente 
+# CT-07 – Visualizar horários marcados como cliente 
 
 * Requisitos Associados:  
 
@@ -284,7 +199,7 @@ Site deve exibir os horários marcados pelo cliente
 
 
 
-# CT-11 – Visualizar horários marcados pelos clientes 
+# CT-08 – Visualizar horários marcados pelos clientes 
 
 * Requisitos Associados:  
 
@@ -305,4 +220,3 @@ Verificar se está sendo possível visualizar os horários marcados pelos client
 * Critérios de Êxito:  
 
 Site deve exibir todos os horários marcados pelos clientes 
-
