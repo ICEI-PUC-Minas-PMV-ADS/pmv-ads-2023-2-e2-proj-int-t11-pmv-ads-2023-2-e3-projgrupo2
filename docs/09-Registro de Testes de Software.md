@@ -58,10 +58,19 @@ Os resultados obtidos nos testes de software realizados são descritos abaixo.
 * Passos:  
 
 1 Acessar o Site 
+![Passo 1](img/testes/C03Passo1.png)
 
-2 Preencher e-mail e senha corretos 
+2 Acessar a página de login
+![Passo 2](img/testes/C03Passo2.png)
 
-3 Clicar em fazer login
+3 Preencher e-mail e senha corretos 
+![Passo 3](img/testes/C03Passo3.png)
+
+4 Clicar em fazer login
+![Passo 4](img/testes/C03Passo4.png)
+
+* Critérios de Êxito: 
+![Êxito](img/testes/C03Exito.png)
 
 
 
