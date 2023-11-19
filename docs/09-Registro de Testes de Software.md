@@ -79,5 +79,7 @@ Os resultados obtidos nos testes de software realizados são descritos abaixo.
 * Passos:  
 
 1 Acessar o Site
+![Passo 1](img/TelaListaDentista.png)
 
-2 Acessar página com a lista de dentistas
+* Critérios de Êxito: 
+![Êxito](img/TelaListaDentista.png)
