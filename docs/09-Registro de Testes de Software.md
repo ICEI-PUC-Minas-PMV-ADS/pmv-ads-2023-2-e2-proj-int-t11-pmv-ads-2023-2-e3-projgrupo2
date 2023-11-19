@@ -36,12 +36,20 @@ Os resultados obtidos nos testes de software realizados são descritos abaixo.
 * Passos: 
 
 1 Acessar o Site 
+![Passo 1](img/testes/C02Passo1.png)
 
 2 Acessar a página de cadastro do dentista
+![Passo 2.1](img/testes/C02Passo2.1.png)
+![Passo 2.2](img/testes/C02Passo2.2.png)
 
 3 Preencher campos de cadastro do dentista 
+![Passo 3](img/testes/C02Passo3.png)
 
 4 Clicar em confirmar cadastro
+![Passo 4](img/testes/C02Passo4.png)
+
+* Critérios de Êxito: 
+![Êxito](img/testes/C02Exito.png)
 
 
 
