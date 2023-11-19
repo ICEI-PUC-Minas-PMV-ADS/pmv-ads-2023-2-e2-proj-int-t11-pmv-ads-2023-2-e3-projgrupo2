@@ -24,7 +24,7 @@ Os resultados obtidos nos testes de software realizados são descritos abaixo.
 ![Passo 3](img/testes/C01Passo3.png)
 
 4 Clicar em confirmar cadastro
-![Passo 4](img/testes/C01Passo3.png)
+![Passo 4](img/testes/C01Passo4.png)
 
 * Critérios de Êxito: 
 ![Êxito](img/testes/C01Exito.png)
