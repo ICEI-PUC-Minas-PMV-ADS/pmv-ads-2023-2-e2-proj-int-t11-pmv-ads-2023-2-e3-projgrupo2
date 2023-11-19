@@ -22,7 +22,7 @@ Tela mais informações sobre o Dentista
 
 Nessa parte será possível visualizar com mais detalhes as informações do dentista e também haverá um botão para agendar com o profissional. 
 
-![Imagem 07 Tela Mais Informaçoes sobre os Dentistas](img/Tela%20Mais%20informaçoes%20sobre%20dentista.png)
+![Imagem 07 Tela Mais Informaçoes sobre os Dentistas](img/TelaDetalheDentista.png)
 
 Tela Entrar 
 
