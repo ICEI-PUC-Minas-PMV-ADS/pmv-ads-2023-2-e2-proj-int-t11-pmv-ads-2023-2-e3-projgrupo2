@@ -28,15 +28,15 @@ Tela Entrar
 
 Nessa parte o usuário necessitara de um cadastro para poder acessar o sistema, caso ele já seja cadastrado poderá entrar com seu e-mail e senha. Caso ele esqueça a senha basta deixar o Email que foi cadastrado no campo correspondente e clicar no esqueci a senha. Nessa página irá ter a possibilidade de clicar em um botão para cadastro que será diferente para paciente e dentistas. 
 
-![Imagem 08 Tela Login](img/Tela%20Login.png)
+![Imagem 08 Tela Login](img/TelaLogin.png)
 
 Tela Cadastro paciente 
 
 Nessa tela será possível fazer o cadastro do Paciente com as informações de nome, telefone, Email e senha. Caso as informações estejam de acordo o cadastro será concluído com sucesso. 
 
-![Imagem 09 Tela Cadastro Paciente](img/Tela%20Cadastro%20Paciente.png)
+![Imagem 09 Tela Cadastro Paciente](img/TelaCadastroCliente.png)
 
 Tela Cadastro dentista 
 
 Nessa parte será possível o profissional dentista realizar o seu cadastro, colocando as seguintes informações obrigatórias: Nome completo, especialidade, número de cro, número de telefone, nome da clínica, endereço da clínica, e-mail e senha. 
-![Imagem 10 Tela Cadastro Dentista](img/Tela%20Cadastro%20Dentista.png)
+![Imagem 10 Tela Cadastro Dentista](img/TelaCadastroDentista.png)
