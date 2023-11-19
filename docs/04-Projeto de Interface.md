@@ -28,7 +28,7 @@ Tela Entrar
 
 Nessa parte o usuário necessitara de um cadastro para poder acessar o sistema, caso ele já seja cadastrado poderá entrar com seu e-mail e senha. Caso ele esqueça a senha basta deixar o Email que foi cadastrado no campo correspondente e clicar no esqueci a senha. Nessa página irá ter a possibilidade de clicar em um botão para cadastro que será diferente para paciente e dentistas. 
 
-![Imagem 08 Tela Login](img/TelaLogin.png)
+![Imagem 08 Tela Login](img/TelaLoginCliente.png)
 
 Tela Cadastro paciente 
 

@@ -23,33 +23,32 @@ RF-02
 
 /UsuarioDentistas/Create
  
-Instruções de acesso 
+* Instruções de acesso 
 
 Acesse o site https://eassydental.azurewebsites.net/, clique no botão de login e em registre agora
 
+* Fazer Login (RF-03 RF-04) 
 
+Nas telas a seguir o cliente e o dentista é capaz de se logar ao sistema
 
-* Pesquisa de Notícias (RF-04 RF-05) 
+![Pagina Login Cliente](img/TelaLoginCliente.png)
+![Pagina Login Dentista](img/TelaLoginDentista.png)
 
-Nessa tela o cliente ( Paciente ou Dentista) será capaz de fazer login no sistema.
+* Requisitos atendidos 
 
-![Pagina Login Cliente](img/logincliente2.png)
-![Pagina Login Cliente](img/LoginDentista.png)
+RF-03 
+
+RF-04 
 
 * Artefatos da funcionalidade 
 
-login.html 
+/UsuarioClientes/Login
 
- 
+/UsuarioDentistas/Login
 
 * Instruções de acesso 
 
-Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub; 
-
-Descompacte o arquivo em uma pasta específica; 
-
-Abra o Visual Studio Code e execute o Live Server;
-Abra um navegador de Internet e informe a seguinte URL:  https://localhost:7162/
+Acesse o site https://eassydental.azurewebsites.net/ e clique no botão de login
 
 
 * Pesquisa de Notícias (RNF-01 RNF-03) 

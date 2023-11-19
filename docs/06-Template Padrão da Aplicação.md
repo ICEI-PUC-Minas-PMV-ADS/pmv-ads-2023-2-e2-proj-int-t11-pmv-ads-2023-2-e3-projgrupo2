@@ -38,4 +38,4 @@ Local aonde os pacientes poderam ver os dentistas cadastrados
 Tela Entrar 
 
 È possivel entrar no sistema
-![Imagem 08 Tela Login](img/TelaLogin.png)
+![Imagem 08 Tela Login](img/TelaLoginCliente.png)
