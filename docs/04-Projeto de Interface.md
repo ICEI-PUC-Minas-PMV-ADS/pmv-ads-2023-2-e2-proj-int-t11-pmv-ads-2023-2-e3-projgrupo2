@@ -40,10 +40,3 @@ Tela Cadastro dentista
 
 Nessa parte será possível o profissional dentista realizar o seu cadastro, colocando as seguintes informações obrigatórias: Nome completo, especialidade, número de cro, número de telefone, nome da clínica, endereço da clínica, e-mail e senha. 
 ![Imagem 10 Tela Cadastro Dentista](img/Tela%20Cadastro%20Dentista.png)
-
-Tela Agendamento 
-
-Depois que o paciente ou dentista estiverem logados eles terão acesso a agenda onde mostrara as consultas agendadas com os pacientes. Pacientes só visualizaram informações dos dentistas e horários e os dentistas poderão ver as informações de cadastro no próprio calendário. 
-
-![Imagem 11 Tela Agendamento](img/Tela%20Agendamento.png)
-
