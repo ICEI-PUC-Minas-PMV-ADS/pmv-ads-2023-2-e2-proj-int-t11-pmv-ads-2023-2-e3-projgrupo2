@@ -107,23 +107,23 @@ Acesse o site https://eassydental.azurewebsites.net/
 * Passos:  
 
 1 Acessar o Site
-![Passo 1](img/testes/C03Passo1.png)
+![Passo 1](img/testes/C06Passo1.png)
 
 2 Fazer login como cliente
-![Passo 1](img/testes/C03Passo1.png)
+![Passo 2](img/testes/C06Passo2.png)
 
 3 Selecionar dentista
-![Passo 2](img/testes/C03Passo2.png)
+![Passo 3](img/testes/C06Passo3.png)
 
 4 Preencher o dia e a hora
-![Passo 3](img/testes/C03Passo3.png)
+![Passo 4](img/testes/C06Passo4.png)
 
 5 Clicar em agendar
-![Passo 4](img/testes/C03Passo4.png)
+![Passo 5](img/testes/C06Passo5.png)
 
 * Critérios de Êxito:
 
-![Êxito](img/testes/C03Exito.png)
+![Êxito](img/testes/C06Exito.png)
 
 
 
@@ -135,7 +135,7 @@ Acesse o site https://eassydental.azurewebsites.net/
 ![Passo 1](img/testes/C03Passo1.png)
 
 2 Fazer login como cliente
-![Passo 1](img/testes/C03Passo1.png)
+![Passo 2](img/testes/C03Passo1.png)
 
 2 Acessar a página de consultas
 ![Passo 3](img/testes/C03Passo3.png)
@@ -154,7 +154,7 @@ Acesse o site https://eassydental.azurewebsites.net/
 ![Passo 1](img/testes/C03Passo1.png)
 
 2 Fazer login como dentista
-![Passo 1](img/testes/C03Passo1.png)
+![Passo 2](img/testes/C03Passo1.png)
 
 2 Acessar a página de consultas
 ![Passo 3](img/testes/C03Passo3.png)
