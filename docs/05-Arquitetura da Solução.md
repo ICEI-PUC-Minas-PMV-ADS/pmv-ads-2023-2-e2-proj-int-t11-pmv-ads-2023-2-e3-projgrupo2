@@ -50,4 +50,4 @@ A solução implementada conta com os seguintes módulos:
 
 Hospedagem 
 
-O site utiliza a plataforma do Vercel como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL:https://easydental.vercel.app 
+O site utiliza a plataforma do Vercel como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL: https://eassydental.azurewebsites.net/ 

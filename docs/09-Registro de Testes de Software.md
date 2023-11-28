@@ -1,127 +1,165 @@
 # Registro de Testes de Software
 
+Os resultados obtidos nos testes de software realizados são descritos abaixo.
+
 Instruções de acesso 
 
-Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub; 
+Acesse o site https://eassydental.azurewebsites.net/
 
-Descompacte o arquivo em uma pasta específica; 
+# CT-01 – Cadastrar Cliente 
 
-Abra o Visual Studio Code e execute o Live Server; 
+* Passos: 
 
-Abra um navegador de Internet e informe a seguinte URL: 
-https://localhost:7162/
+1 Acessar o Site 
+![Passo 1](img/testes/C01Passo1.png)
 
-* Registro de Testes de Software 
+2 Acessar a página de cadastro do cliente
+![Passo 2](img/testes/C01Passo2.png)
 
-Os resultados obtidos nos testes de software realizados são descritos abaixo. 
+3 Preencher campos de cadastro do cliente 
+![Passo 3](img/testes/C01Passo3.png)
 
- 
+4 Clicar em confirmar cadastro
+![Passo 4](img/testes/C01Passo4.png)
 
-*CT-01 – Cadastrar Cliente 
+* Critérios de Êxito:
 
-1) Acessar a página home do site. 
-
-![Pagina Home](img/pghome.png)
-
-2) Navegar até a seção "Cadastro Cliente". 
-
-![Pagina Cadastro Cliente](img/pghome.png)
-
-3) Preencher todos os campos do formulário. 
-
-![Pagina Cadastro Cliente](img/pgfazcadastro.png)
-
-4) Clicar em confirmar cadastro. 
-
-![Pagina Cadastro Cliente](img/pgfazcadastro.png)
-
-5) Cadastro realizado com sucesso. 
-
-![Pagina Cadastro Cliente](img/cadastrook.png)
-
-
-* CT-02 – Cadastrar Cliente 
-
-1) Acessar a página home do site. 
-
-![Pagina Home](img/pghome.png)
-
-2) Navegar até a seção "Cadastro Cliente". 
-
-![Pagina Cadastro Dentista](img/pghome.png)
-
-3) Navegar até a seçao "Cadastro Dentista"
-
-![Pagina Cadastro Dentista](img/cadastro1cliente.png)
-
-4) Preencher todos os campos do formulário. 
-
-![Pagina Cadastro Dentista](img/formularioUsuarioDentistas.png)
-
-5) Clicar em confirmar cadastro. 
-
-![Pagina Cadastro Dentista](img/dentistacadastrado.png)
-
-6) Cadastro realizado com sucesso. 
-
-![Pagina Cadastro Dentista](img/.png)
+![Êxito](img/testes/C01Exito.png)
 
 
 
-*CT-03 – Login Cliente
+# CT-02 – Cadastrar Dentista 
 
-1) Acessar a página home do site. 
+* Passos: 
 
-![Pagina Home](img/pghome.png)
+1 Acessar o Site 
+![Passo 1](img/testes/C02Passo1.png)
 
-2) Navegar até a seçao "Login"
+2 Acessar a página de cadastro do dentista
+![Passo 2.1](img/testes/C02Passo2.1.png)
+![Passo 2.2](img/testes/C02Passo2.2.png)
 
-![Pagina Login Cliente](img/pghome.png)
+3 Preencher campos de cadastro do dentista 
+![Passo 3](img/testes/C02Passo3.png)
 
-3) Preencher todos os campos do formulário. 
+4 Clicar em confirmar cadastro
+![Passo 4](img/testes/C02Passo4.png)
 
-![Pagina Login Cliente](img/logincliente2.png)
+* Critérios de Êxito:
 
-4) Clicar em confirmar acessar. 
-
-![Pagina Login Cliente](img/logincliente2.png)
-
-5) Cadastro realizado com sucesso. 
-
-![Pagina Login Cliente](img/logincliente3.png)
-
-6) Pode sair. 
-
-![Pagina Login Cliente](img/logincliente3.png)
+![Êxito](img/testes/C02Exito.png)
 
 
 
-*CT-04 – Login Cliente
+# CT-03 – Fazer login 
 
-1) Acessar a página home do site. 
+* Passos:  
 
-![Pagina Home](img/pghome.png)
+1 Acessar o Site 
+![Passo 1](img/testes/C03Passo1.png)
 
-2) Navegar até a seção "Login". 
+2 Acessar a página de login
+![Passo 2](img/testes/C03Passo2.png)
 
-![Pagina Login Cliente](img/pghome.png)
+3 Preencher e-mail e senha corretos 
+![Passo 3](img/testes/C03Passo3.png)
 
-3) Navegar até a seção "Login Dentista". 
+4 Clicar em fazer login
+![Passo 4](img/testes/C03Passo4.png)
 
-![Pagina Login Cliente](img/LoginDentista.png)
+* Critérios de Êxito:
 
-4) Preencher todos os campos do formulário. 
+![Êxito](img/testes/C03Exito.png)
 
-![Pagina Login Cliente](img/loginDentista2.png)
 
-5) Clicar em acessar. 
 
-![Pagina Login Cliente](img/loginDentista2.png)
+# CT-04 – Visualizar lista de dentistas
 
-6) Cadastro realizado com sucesso. 
+* Passos:  
 
-![Pagina Login Cliente](img/acessarok.png)
+1 Acessar o Site
+![Passo 1](img/TelaListaDentista.png)
 
-7) Pode sair. 
+* Critérios de Êxito:
 
-![Pagina Login Cliente](img/acessarok.png)
+![Êxito](img/TelaListaDentista.png)
+
+
+
+# CT-05 – Visualizar detalhes de um dentista 
+
+* Passos:
+
+1 Acessar o Site
+![Passo 1](img/testes/C05Passo1.png)
+
+2 Selecionar dentista
+![Passo 2](img/testes/C05Passo2.png)
+
+* Critérios de Êxito:
+
+![Êxito](img/testes/C05Exito.png)
+
+
+
+# CT-06 – Agendar horário com um dentista
+
+* Passos:  
+
+1 Acessar o Site
+![Passo 1](img/testes/C06Passo1.png)
+
+2 Fazer login como cliente
+![Passo 2](img/testes/C06Passo2.png)
+
+3 Selecionar dentista
+![Passo 3](img/testes/C06Passo3.png)
+
+4 Preencher o dia e a hora
+![Passo 4](img/testes/C06Passo4.png)
+
+5 Clicar em agendar
+![Passo 5](img/testes/C06Passo5.png)
+
+* Critérios de Êxito:
+
+![Êxito](img/testes/C06Exito.png)
+
+
+
+# CT-07 – Visualizar horários marcados como cliente
+
+* Passos:  
+
+1 Acessar o Site 
+![Passo 1](img/testes/C07Passo1.png)
+
+2 Fazer login como cliente
+![Passo 2](img/testes/C07Passo2.png)
+
+3 Acessar a página de consultas
+![Passo 3](img/testes/C07Passo3.png)
+
+* Critérios de Êxito:
+
+![Êxito](img/testes/C07Exito.png)
+
+
+
+# CT-08 – Visualizar horários marcados pelos clientes
+
+* Passos:  
+
+1 Acessar o Site 
+![Passo 1](img/testes/C08Passo1.png)
+
+2 Fazer login como dentista
+![Passo 2.1](img/testes/C08Passo2.1.png)
+![Passo 2.2](img/testes/C08Passo2.2.png)
+
+3 Acessar a página de consultas
+![Passo 3](img/testes/C08Passo3.png)
+
+* Critérios de Êxito:
+
+![Êxito](img/testes/C08Exito.png)

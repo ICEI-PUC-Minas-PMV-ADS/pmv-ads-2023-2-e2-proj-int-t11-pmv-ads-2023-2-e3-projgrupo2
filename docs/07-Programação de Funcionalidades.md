@@ -2,14 +2,14 @@
 
 Funcionalidades do Sistema (Telas) 
 
-Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades do sistema. O respectivo endereço (URL) e outras orientações de acesso são são apresentadas na sequência.
+Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades do sistema. O respectivo endereço (URL) e outras orientações de acesso são apresentadas na sequência.
 
-*Fazer Cadastro(RF-01 e RF-02) 
+* Fazer Cadastro (RF-01 e RF-02) 
 
-Nessas duas Telas o cliente é capaz de cadastrar no sistema
+Nas telas a seguir o cliente e o dentista é capaz de se cadastrar no sistema
 
-![Pagina Cadastro Cliente](img/pgfazcadastro.png)
-![Pagina Cadastro Dentista](img/cadastro1cliente.png)
+![Pagina Cadastro Cliente](img/TelaCadastroCliente.png)
+![Pagina Cadastro Dentista](img/TelaCadastroDentista.png)
 
 * Requisitos atendidos 
 
@@ -17,79 +17,71 @@ RF-01
 
 RF-02 
 
- 
-
 * Artefatos da funcionalidade 
 
-Creat.html 
+/UsuarioClientes/Create
 
+/UsuarioDentistas/Create
  
-
-Instruções de acesso 
-
-Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub; 
-
-Descompacte o arquivo em uma pasta específica; 
-
-Abra o Visual Studio Code e execute o Live Server;
-Abra um navegador de Internet e informe a seguinte URL:  https://localhost:7162/
-
-
-
-* Pesquisa de Notícias (RF-04 RF-05) 
-
-Nessa tela o cliente ( Paciente ou Dentista) será capaz de fazer login no sistema.
-
-![Pagina Login Cliente](img/logincliente2.png)
-![Pagina Login Cliente](img/LoginDentista.png)
-
-* Artefatos da funcionalidade 
-
-login.html 
-
- 
-
 * Instruções de acesso 
 
-Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub; 
+Acesse o site https://eassydental.azurewebsites.net/, clique no botão de login e em registre agora
 
-Descompacte o arquivo em uma pasta específica; 
+* Fazer Login (RF-03 RF-04) 
 
-Abra o Visual Studio Code e execute o Live Server;
-Abra um navegador de Internet e informe a seguinte URL:  https://localhost:7162/
+Nas telas a seguir o cliente e o dentista é capaz de se logar ao sistema
 
-
-* Pesquisa de Notícias (RNF-01 RNF-03) 
-
-A Tela Home já se encontra responsiva e segue um padrao de designer. 
-
- 
-![Pagina Home](img/pghome.png)
- 
+![Pagina Login Cliente](img/TelaLoginCliente.png)
+![Pagina Login Dentista](img/TelaLoginDentista.png)
 
 * Requisitos atendidos 
 
-RNF-01 -  
+RF-03 
 
-RNF-02 -  
-
- 
+RF-04 
 
 * Artefatos da funcionalidade 
 
-Index.html 
+/UsuarioClientes/Login
 
- 
-
- 
-
-Instruções de acesso 
+/UsuarioDentistas/Login
 
 * Instruções de acesso 
 
-Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub; 
+Acesse o site https://eassydental.azurewebsites.net/ e clique no botão de login
 
-Descompacte o arquivo em uma pasta específica; 
+* Visualizar lista de Dentistas (RF-05) 
 
-Abra o Visual Studio Code e execute o Live Server;
-Abra um navegador de Internet e informe a seguinte URL:  https://localhost:7162/
+Na tela a seguir os usuários são capazes de visualizar a lista de dentistas
+
+![Pagina Lista Dentista](img/TelaListaDentista.png)
+
+* Requisitos atendidos 
+
+RF-05
+
+* Artefatos da funcionalidade 
+
+/UsuarioDentistas/Index
+
+* Instruções de acesso 
+
+Acesse o site https://eassydental.azurewebsites.net/ e será redirecionado diretamente na lista de dentistas
+
+* Visualizar detalhes do Dentista (RF-06) 
+
+Na tela a seguir os usuários são capazes de visualizar os detalhes do dentista
+
+![Pagina Detalhes Dentista](img/TelaDetalheDentista.png)
+
+* Requisitos atendidos 
+
+RF-06
+
+* Artefatos da funcionalidade 
+
+/UsuarioDentistas/Details/{id}
+
+* Instruções de acesso 
+
+Acesse o site https://eassydental.azurewebsites.net/ e escolha um dentista da lista de dentistas
