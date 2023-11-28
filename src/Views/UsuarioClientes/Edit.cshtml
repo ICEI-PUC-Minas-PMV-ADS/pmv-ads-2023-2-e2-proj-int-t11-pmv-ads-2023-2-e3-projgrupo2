@@ -1,50 +1,48 @@
 ﻿@model EassyDental.Models.UsuarioCliente
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar perfil";
 }
 
-<h1>Edit</h1>
-
-<h4>UsuarioCliente</h4>
+<h1>Editar perfil</h1>
 <hr />
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit" asp-route-id="@Model.Id" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+
+            <div class="form-outline form-floating mb-1">
                 <input asp-for="Name" class="form-control" />
+                <label for="Name" class="form-label">Nome</label>
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Telefone" class="control-label"></label>
+            <div class="form-outline form-floating mb-1">
                 <input asp-for="Telefone" class="form-control" />
+                <label for="Telefone" class="form-label">Telefone</label>
                 <span asp-validation-for="Telefone" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
+            <div class="form-outline form-floating mb-1">
                 <input asp-for="Email" class="form-control" />
+                <label for="Email" class="form-label">Email</label>
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Senha" class="control-label"></label>
+            <div class="form-outline form-floating mb-3">
                 <input asp-for="Senha" class="form-control" />
+                <label for="Senha" class="form-label">Senha</label>
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
-        </form>
-        <form asp-action="DeleteConfirmed" asp-route-id="@Model.Id" method="post">
-            <input type="submit" value="Delete" class="btn btn-danger" />
         </form>
     </div>
 </div>
-
-<div>
-    <a href="@Url.Action("Index", "UsuarioDentistas")">Back to List</a>
+<div class="d-flex justify-content-end">
+    <form asp-action="Details" asp-route-id="@Model.Id" method="get" class="me-1">
+        <input type="submit" value="Voltar" class="btn" style="background-color: #a8966f; color: white;" />
+    </form>
 </div>
 
 @section Scripts {

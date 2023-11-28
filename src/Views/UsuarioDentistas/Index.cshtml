@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<EassyDental.Models.UsuarioDentista>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Lista de dentistas";
 }
 
 <div class="container">
@@ -31,23 +31,23 @@
                                 <div class="col-auto">
                                     @Html.DisplayFor(modelItem => item.CRO)
                                 </div>
-                                <div class="col-auto border-start border-2">
+                                <div class="col-auto border-start border-2 text-break">
                                     @Html.DisplayFor(modelItem => item.Especialidade)
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-5 text-secondary align-self-end">
-                        <div class="row mb-2">
+                        <div class="row mb-2 text-break">
                             telefone: @Html.DisplayFor(modelItem => item.Telefone)
                         </div>
-                        <div class="row">
+                        <div class="row text-break">
                             e-mail: @Html.DisplayFor(modelItem => item.Email)
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Details</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Detalhes</a>
                 </div>
             </div>
         </div>
