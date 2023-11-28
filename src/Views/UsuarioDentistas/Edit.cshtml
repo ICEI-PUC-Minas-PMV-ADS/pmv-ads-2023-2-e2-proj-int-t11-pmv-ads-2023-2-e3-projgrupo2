@@ -29,6 +29,16 @@
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-outline form-floating mb-1">
+                <input asp-for="Senha" class="form-control" />
+                <label for="Senha" class="form-label">Senha</label>
+                <span asp-validation-for="Senha" class="text-danger"></span>
+            </div>
+            <div class="form-outline mb-4 form-floating">
+                <input type="password" class="form-control" />
+                <label for="ConfirmeSenha" class="form-label">Confirme a senha</label>
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-outline form-floating mb-1">
                 <input asp-for="CRO" class="form-control" />
                 <label for="CRO" class="form-label">CRO</label>
                 <span asp-validation-for="CRO" class="text-danger"></span>
@@ -47,11 +57,6 @@
                 <input asp-for="Endereco" class="form-control" />
                 <label for="Endereco" class="form-label">Endereço</label>
                 <span asp-validation-for="Endereco" class="text-danger"></span>
-            </div>
-            <div class="form-outline form-floating mb-1">
-                <input asp-for="Senha" class="form-control" />
-                <label for="Senha" class="form-label">Senha</label>
-                <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
             <div class="form-outline form-floating mb-1">
                 <input asp-for="HorarioAbertura" class="form-control" type="time" />
