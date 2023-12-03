@@ -26,7 +26,7 @@
 |  Requisito | RF-08 - O cliente, quando logado, deve poder agendar um horário com um dentista. RF-11 - O cliente, quando logado, deve poder visualizar os horários marcados por ele. |
 | Observação | Após o usuário realizar o login como paciente, e ser direcionado a página de lista de dentistas, selecionar um dentista previamente cadastrado, clica em “Detalhes”, assim será direcionado a página de detalhes do dentista, aonde além dos detalhes do dentista haverá um campo “Agendamento”. Onde o usuário realizará o agendamento da data e do horário, após o agendamento o usuário será direcionado a página de “Suas consultas” aonde o mesmo pode verificar o seu horário marcado com o seu dentista selecionado previamente na lista de dentistas. Assim, a aplicação atende aos requisitos: RF-08 e RF-11. |
 
-### Os testes de usabilidade a serem realizados no aplicativo são descritos a seguir:
+## Os testes de usabilidade a serem realizados no aplicativo são descritos a seguir:
 
 |          Tarefa          |                                Objetivos                               | Critérios de Avaliação de Usabilidade | Coleta de Dados | Análise dos Resultados | Recomendações |
 |--------------------------|------------------------------------------------------------------------|---------------------------------------|-|-|-|
