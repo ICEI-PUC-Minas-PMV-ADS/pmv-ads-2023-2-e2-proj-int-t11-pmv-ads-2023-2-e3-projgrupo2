@@ -26,49 +26,12 @@
 |  Requisito | RF-08 - O cliente, quando logado, deve poder agendar um horário com um dentista. RF-11 - O cliente, quando logado, deve poder visualizar os horários marcados por ele. |
 | Observação | Após o usuário realizar o login como paciente, e ser direcionado a página de lista de dentistas, selecionar um dentista previamente cadastrado, clica em “Detalhes”, assim será direcionado a página de detalhes do dentista, aonde além dos detalhes do dentista haverá um campo “Agendamento”. Onde o usuário realizará o agendamento da data e do horário, após o agendamento o usuário será direcionado a página de “Suas consultas” aonde o mesmo pode verificar o seu horário marcado com o seu dentista selecionado previamente na lista de dentistas. Assim, a aplicação atende aos requisitos: RF-08 e RF-11. |
 
-## Os testes de usabilidade a serem realizados no aplicativo são descritos a seguir:
+## Cenários de Teste de Usabilidade
+Aqui está um exemplo simplificado de uma tabela de plano de teste de usabilidade para a aplicação mencionada. Essa tabela fornece uma estrutura básica para avaliar a usabilidade em diferentes tarefas da aplicação, definindo objetivos, critérios de avaliação, métodos de coleta de dados e análise dos resultados.
 
-|          Tarefa          |                                Objetivos                               | Critérios de Avaliação de Usabilidade | Coleta de Dados | Análise dos Resultados | Recomendações |
-|--------------------------|------------------------------------------------------------------------|---------------------------------------|-|-|-|
-|    Cadastro de Cliente   |       Verificar a facilidade de conclusão do processo de cadastro      |  Tempo médio de conclusão do cadastro | | | |
-|   Cadastro de Dentista   |       Verificar a facilidade de conclusão do processo de cadastro      |  Tempo médio de conclusão do cadastro | | | |
-|     Login de Usuario     | Avaliar a facilidade de login e a precisão do feedback de autenticação |     Número de cliques necessários     | | | |
-| Agendamento de Consultas |     Verificar quanto tempo o usuário gasta para marcar uma consulta    | Tempo médio para agendar uma consulta | | | |
-
-# Cadastro de Cliente: 
-
-* Objetivo: Avaliar a facilidade e a eficácia do processo de cadastro de um cliente. 
-
-* Público: Usuários finais (Clientes e Dentistas). 
-
-* Tarefa: Um usuário deve se cadastrar informando nome, e-mail, senha e idade. Avaliar o tempo e a facilidade de conclusão. 
-
- 
-
-# Cadastro de Dentista:  
-
-* Objetivo: Avaliar a eficiência do processo de cadastro de um dentista. 
-
-* Público: Usuários finais (Clientes e Dentistas). 
-
-* Tarefa: Um usuário deve se cadastrar como dentista, fornecendo todas as informações obrigatórias (nome, e-mail, senha, idade, especialidade). Avaliar se as informações opcionais (horário de atendimento, local do consultório e descrição) são de fácil inserção. 
-
- 
-
-# Login de Cliente e Dentista:  
-
-* Objetivo: Testar a funcionalidade de login do sistema. 
-
-* Público: Usuários finais (Clientes e Dentistas). 
-
-* Tarefa: Usuários devem fazer login com sucesso usando e-mail e senha correspondentes. Avaliar a facilidade de login e a precisão do feedback de autenticação.
-
- 
-
-# Agendamento de Consultas: 
-
-* Objetivo: Testar o processo de agendamento de consultas. 
-
-* Público: Usuários finais (Clientes e Dentistas). 
-
-* Tarefa: Clientes devem agendar uma consulta com um dentista e avaliar a facilidade do processo. Dentistas devem visualizar os horários marcados pelos clientes e verificar a eficácia do gerenciamento de horários. 
+|          Tarefa          |                                Objetivos                               | Critérios de Avaliação de Usabilidade |                 Coleta de Dados                 |            Análise dos Resultados            |
+|--------------------------|------------------------------------------------------------------------|---------------------------------------|-------------------------------------------------|----------------------------------------------|
+|    Cadastro de Cliente   |       Verificar a facilidade de conclusão do processo de cadastro      |    Taxa de erro durante o cadastro    | Observação direta do usuário durante o cadastro | Identificar áreas de confusão ou dificuldade |
+|   Cadastro de Dentista   |       Verificar a facilidade de conclusão do processo de cadastro      |    Taxa de erro durante o cadastro    | Observação direta do usuário durante o cadastro | Identificar áreas de confusão ou dificuldade |
+|     Login de Usuario     | Avaliar a facilidade de login e a precisão do feedback de autenticação |     Número de cliques necessários     |        Tempo médio de conclusão do login        |  Identificar possíveis erros de performance  |
+| Agendamento de Consultas |     Verificar quanto tempo o usuário gasta para marcar uma consulta    | Tempo médio para agendar uma consulta |      Tempo médio para agendar uma consulta      |    Identificar a intuitividade do usuário    |
