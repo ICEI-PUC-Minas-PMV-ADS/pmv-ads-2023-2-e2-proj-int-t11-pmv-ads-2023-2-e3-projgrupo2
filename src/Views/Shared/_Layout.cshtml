@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>@ViewData["Title"]EasyDental</title>
+        <title>@ViewData["Title"]</title>
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="./css/Sharedstyles.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/Eassydentalmvc.styles.css" asp-append-version="true" />
@@ -31,13 +31,14 @@
                         }
                         else
                         {
-                            <a class="nav-link text-dark" asp-controller="UsuarioClientes" asp-action="Login" style="background-color: #a8966f; color: white !important; border-radius: 15px; padding: 10px 20px; transition: background-color 0.3s ease;">Login</a>
+                            <a class="nav-link" asp-controller="UsuarioClientes" asp-action="Login" style="background-color: #a8966f; color: white !important; border-radius: 15px; padding: 10px 20px;">Login</a>
+                            <a class="nav-link" asp-controller="UsuarioClientes" asp-action="Create" style="margin-left: 5px; background-color: white; color: #a8966f !important; border-color:#a8966f; border-radius: 15px; border: 2px; border-style: solid; padding: 10px 20px;">Cadastrar</a>
                         }
 
                         @if (User.IsInRole("Dentista"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="UsuarioDentistas" asp-action="Edit" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value">Editar Perfil</a>
+                                <a class="nav-link" asp-controller="UsuarioDentistas" asp-action="Details" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value">Perfil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" asp-controller="UsuarioDentistas" asp-action="IndexEventos" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value">Suas Consultas</a>

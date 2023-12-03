@@ -1,7 +1,8 @@
-﻿@model EassyDental.Models.UsuarioDentista
+﻿@using System.Security.Claims;
+@model EassyDental.Models.UsuarioDentista
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes do dentistas";
 }
 
 <div class="container">
@@ -30,17 +31,17 @@
                             <div class="col-auto">
                                 @Html.DisplayFor(model => model.CRO)
                             </div>
-                            <div class="col-auto border-start border-2">
+                            <div class="col-auto border-start border-2 text-break">
                                 @Html.DisplayFor(model => model.Especialidade)
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-5 text-secondary align-self-end">
-                    <div class="row mb-2">
+                    <div class="row mb-2 text-break">
                         telefone: @Html.DisplayFor(model => model.Telefone)
                     </div>
-                    <div class="row">
+                    <div class="row text-break">
                         e-mail: @Html.DisplayFor(model => model.Email)
                     </div>
                 </div>
@@ -48,9 +49,6 @@
             <div class="row border rounded-3 text-secondary mb-2 p-3">
                 <label class="p-0">Descrição:</label>
                 <div class="col p-0 text-break">@Html.DisplayFor(model => model.Descricao)</div>
-            </div>
-            <div class="row">
-                <a asp-action="Index" class="btn btn-sm btn-outline-secondary">Retornar</a>
             </div>
         </div>
         @if (User.IsInRole("Cliente"))
@@ -67,6 +65,20 @@
                 </div>
             </form>
         }
+        <div class="d-flex">
+            @if (User.IsInRole("Dentista") && Model.Id.ToString() == User.FindFirst(ClaimTypes.NameIdentifier).Value)
+            {
+                <form asp-action="Edit" asp-route-id="@Model?.Id" method="get" class="me-1">
+                    <input type="submit" value="Editar" class="btn btn-secondary" />
+                </form>
+                <form asp-action="DeleteConfirmed" asp-route-id="@Model?.Id" method="post">
+                    <input type="submit" value="Deletar" class="btn btn-danger" />
+                </form>
+            }
+            <form asp-action="Index" asp-controller="UsuarioDentistas" method="get" class="ms-auto">
+                <input type="submit" value="Voltar" class="btn" style="background-color: #a8966f; color: white;" />
+            </form>
+        </div>
     </div>
 </div>
 

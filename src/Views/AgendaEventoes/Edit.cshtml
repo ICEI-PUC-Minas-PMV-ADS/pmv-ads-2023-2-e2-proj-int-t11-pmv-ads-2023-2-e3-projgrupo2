@@ -2,13 +2,12 @@
 @model EassyDental.Models.AgendaEvento
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar consulta";
 }
 
-<h1>Edit</h1>
-
-<h4>AgendaEvento</h4>
+<h1>Editar consulta</h1>
 <hr />
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit" asp-route-id="@Model.Id" method="post">
@@ -16,26 +15,30 @@
             <input type="hidden" asp-for="Id" />
             <input type="hidden" asp-for="UsuarioClienteId" />
             <input type="hidden" asp-for="UsuarioDentistaId" />
-            <div class="form-group">
-                <label asp-for="HorarioConsulta" class="control-label"></label>
+
+            <div class="form-outline form-floating mb-3">
                 <input asp-for="HorarioConsulta" class="form-control" />
+                <label for="HorarioConsulta" class="form-label">Horário agendado</label>
                 <span asp-validation-for="HorarioConsulta" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div>
+                <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
-
-<div>
+<div class="d-flex justify-content-end">
     @if (User.IsInRole("Dentista"))
     {
-        <a asp-action="IndexEventos" asp-controller="UsuarioDentistas" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value">Back to List</a>
+        <form asp-action="IndexEventos" asp-controller="UsuarioDentistas" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value" method="get">
+            <input type="submit" value="Voltar" class="btn" style="background-color: #a8966f; color: white;" />
+        </form>
     }
     @if (User.IsInRole("Cliente"))
     {
-        <a asp-action="IndexEventos" asp-controller="UsuarioClientes" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value">Back to List</a>
+        <form asp-action="IndexEventos" asp-controller="UsuarioClientes" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value" method="get">
+            <input type="submit" value="Voltar" class="btn" style="background-color: #a8966f; color: white;" />
+        </form>
     }
 </div>
 

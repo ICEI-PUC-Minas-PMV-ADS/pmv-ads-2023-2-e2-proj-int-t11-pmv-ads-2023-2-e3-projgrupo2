@@ -2,25 +2,24 @@
 @model EassyDental.Models.AgendaEvento
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes da consulta";
 }
 
-<h1>Details</h1>
+<h1>Detalhes da consulta</h1>
+<hr />
 
 <div>
-    <h4>AgendaEvento</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-4">
-            @Html.DisplayNameFor(model => model.HorarioConsulta)
+    <dl class="row justify-content-center">
+        <dt class="col-4">
+            Horário agendado
         </dt>
-        <dd class = "col-8">
+        <dd class="col-8">
             @Html.DisplayFor(model => model.HorarioConsulta)
         </dd>
         @if (User.IsInRole("Dentista"))
         {
             <dt class="col-sm-4">
-                @Html.DisplayNameFor(model => model.UsuarioCliente.Name)
+                Nome
             </dt>
             <dd class="col-sm-8">
                 @Html.DisplayFor(model => model.UsuarioCliente.Name)
@@ -41,7 +40,7 @@
         @if (User.IsInRole("Cliente"))
         {
             <dt class="col-sm-4">
-                @Html.DisplayNameFor(model => model.UsuarioDentista.Name)
+                Nome
             </dt>
             <dd class="col-sm-8">
                 @Html.DisplayFor(model => model.UsuarioDentista.Name)
@@ -59,13 +58,13 @@
                 @Html.DisplayFor(model => model.UsuarioDentista.Email)
             </dd>
             <dt class="col-sm-4">
-                @Html.DisplayNameFor(model => model.UsuarioDentista.NomeClinica)
+                Nome da clínica
             </dt>
             <dd class="col-sm-8">
                 @Html.DisplayFor(model => model.UsuarioDentista.NomeClinica)
             </dd>
             <dt class="col-sm-4">
-                @Html.DisplayNameFor(model => model.UsuarioDentista.Endereco)
+                Endereço
             </dt>
             <dd class="col-sm-8">
                 @Html.DisplayFor(model => model.UsuarioDentista.Endereco)
@@ -73,13 +72,17 @@
         }
     </dl>
 </div>
-<div>
+<div class="d-flex justify-content-end">
     @if (User.IsInRole("Dentista"))
     {
-        <a asp-action="IndexEventos" asp-controller="UsuarioDentistas" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value">Back to List</a>
+        <form asp-action="IndexEventos" asp-controller="UsuarioDentistas" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value" method="get">
+            <input type="submit" value="Voltar" class="btn" style="background-color: #a8966f; color: white;" />
+        </form>
     }
     @if (User.IsInRole("Cliente"))
     {
-        <a asp-action="IndexEventos" asp-controller="UsuarioClientes" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value">Back to List</a>
+        <form asp-action="IndexEventos" asp-controller="UsuarioClientes" asp-route-id="@User.FindFirst(ClaimTypes.NameIdentifier).Value" method="get">
+            <input type="submit" value="Voltar" class="btn" style="background-color: #a8966f; color: white;" />
+        </form>
     }
 </div>
