@@ -6,9 +6,7 @@
 | CT-01 | Cadastro de Cliente |
 |:---------------|:---------------------------------:|
 | Requisito | RF-01 - O cliente deve ser capaz de se cadastrar informando obrigatoriamente seu nome, e-mail e senha |
-| Observação | Na página inicial, a aplicação apresenta a funcionalidade de cadastro, este que pode ser realizado ao clicar em "Cadastrar". Após o preenchimento de
-informações cadastrais (Nome, Telefone, E-mail, Senha e Confirme a senha) e clique em “Cadastrar”, o usuário será redirecionado a página de Login Cliente.
-Assim, a aplicação atende ao requisito: RF-01. |
+| Observação | Na página inicial, a aplicação apresenta a funcionalidade de cadastro, este que pode ser realizado ao clicar em "Cadastrar". Após o preenchimento de informações cadastrais (Nome, Telefone, E-mail, Senha e Confirme a senha) e clique em "Cadastrar", o usuário será redirecionado a página de Login Cliente. Assim, a aplicação atende ao requisito: RF-01. |
 | Observação |  |
 | Observação |  |
 | Observação |  |
